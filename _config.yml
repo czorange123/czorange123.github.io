@@ -78,3 +78,16 @@ theme: cyabstyle
 deploy:
   type: git
   repo: https://github.com/czorange123/czorange123.github.io.git
+
+# hexo-helper-live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: left
+    width: 150
+    height: 300
+  mobile:
+    show: true
