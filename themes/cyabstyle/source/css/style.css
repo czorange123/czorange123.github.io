@@ -1327,11 +1327,11 @@ article.format-quote .entry-content blockquote {
 	display: block;
 	padding: 24px 24px 0;
 	padding: 1.714285714rem 1.714285714rem 0;
-	font-size: 15px;
+	font-size: 16px;
 	font-size: 1.071428571rem;
 	line-height: 1.6;
 	font-style: normal;
-	color: #6a6a6a;
+	color: white;
 	background: #efefef;
 }
 
