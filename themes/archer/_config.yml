@@ -1,14 +1,14 @@
 # ========== Profile ========== #
 # avatar
-avatar: /avatar/Misaka.jpg
+avatar: /avatar/Dog.jpg
 # author name
-author: Oranges
+author: Orange
 # signature
 signature: witness me
 # SNS
 social:
-  email: 12345@qq.com
-  github: //github.com/fi3ework
+  email: 1451426471@qq.com
+  github: //github.com/czorange123
   # wechat and qq should be a path of qr-code image
   wechat: /assets/example_qr.png
   qq: 
@@ -25,8 +25,8 @@ social:
   rss: 
 # friends
 friends:
-  friendA: //www.baidu.com
-  friendB: //www.google.com
+  friendA: //yuang.site/
+  friendB: //meditator.cc
   friendC: 
 about:
   enable: true
@@ -34,11 +34,11 @@ about:
 
 # ========== Site ========== #
 # title of the site
-SEO_title: fi3ework's Studio
+SEO_title: Oranges'lair
 # main title
-main_title: fi3ework's Studio.
+main_title: Oranges'lair.
 # subtitle
-subtitle: it's better to burn out than to fade away
+subtitle: All work and no play make Jack a dull boy
 # site haeder image
 site_header_image: '/intro/index-bg.jpg'
 # post haeder image
