@@ -16,16 +16,16 @@ Windows10更新到1709（或者更早）版本后，Windows10系统自带了一�
 {% endblockquote %}
 你已经安装完子系统，接下来去配置它，让它能够满足日常开发需求并且与Windows完美协作。
 {% blockquote %}
-1.安装node.js 按照下面依次执行 (或参照https://nodejs.org/en/download/package-manager/)
+1.安装node.js 按照下面依次执行 (参照https://nodejs.org/en/download/package-manager/)
 {% codeblock%}
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 {% endcodeblock %}
-2.安装git 按照下面执行（或参照https://git-scm.com/download/linux）
+2.安装git 按照下面执行(参照https://git-scm.com/download/linux)
 {% codeblock%}
 apt-get install git
 {% endcodeblock %}
-3.（非必须）当然，如果你要玩个人网站（hexo博客等）需要安装hexo
+3.（非必须）当然，如果你要玩个人网站(hexo博客等）需要安装hexo(参照https://hexo.io/zh-cn/docs/index.html)
 {% codeblock%}
 npm install -g hexo-cli
 {% endcodeblock %}

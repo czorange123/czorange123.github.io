@@ -25,8 +25,8 @@ social:
   rss: 
 # friends
 friends:
-  friendA: //yuang.site/
-  friendB: //meditator.cc
+  yuang: //yuang.site/
+  dusen: //meditator.cc
   friendC: 
 about:
   enable: true
@@ -51,7 +51,7 @@ _404_image: '/intro/404-bg.jpg'
 # If you want to add other comment plugin, edit in "custom.ejs"
 comment:
   # Livere  site: https://livere.com/
-  livere_uid: 
+  livere_uid: MTAyMC8zNzUyNC8xNDA1Ng
   # Disqus  site: https://disqus.com/
   disqus_shortname: 
   # Changyan  site: http://changyan.kuaizhan.com/
@@ -68,6 +68,10 @@ comment:
 # ========== Analytics ========== #
 # Busuanzi pv analytics
 busuanzi: true
+# 统计方式，填写 pv 或 uv
+busuanzi_pv_or_uv: 'pv'
+# 自定义统计标语，'${count}' 会自动替换成统计值
+busuanzi_slug: 'PV: ${count} :)'
 # Baidu analytics
 baidu_analytics: 
 # Google analytics
