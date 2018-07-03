@@ -87,7 +87,26 @@ live2d:
     use: live2d-widget-model-hijiki
   display:
     position: left
-    width: 150
-    height: 300
+    width: 75
+    height: 150
   mobile:
     show: true
+  #archer =>tags
+  jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true
