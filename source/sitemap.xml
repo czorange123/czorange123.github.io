@@ -1,11 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <!-- Free Sitemap Generator http://www.sitemapx.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://zcheng.site/</loc>
-<priority>1.0</priority>
-<lastmod>2018-06-21T08:40:33+00:00</lastmod>
+<loc>https://zcheng.site</loc>
+<priority>1</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/Sanhe.html</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/Sanhe.html</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/linux.html</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/second.html</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/orange.html</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://zcheng.site/about/</loc>
+<priority>0.8</priority>
+<lastmod>2018-07-12T07:32:28+00:00</lastmod>
 <changefreq>Always</changefreq>
 </url>
 </urlset>
