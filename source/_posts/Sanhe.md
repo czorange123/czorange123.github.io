@@ -18,12 +18,14 @@ tags: [旅行]
 
 👣几个人走了几步远就到了三河古镇，我们没有从大门进去，而是选择从离我们比较近的侧门进去的。映入我们眼帘的是一条街，类似小吃街的那种，人还蛮多的，熙熙攘攘。两边的店铺卖的好像都是本地的特产。
 
-<img src="/images/IMG_20180519_161507-min.jpg" width="70%" height="70%" alt="走累了，坐在街边长椅上休息片刻，顺便等等被我们甩了几条街的舅父和舅妈!">
+<img src="/images/sanhe.jpg" width="70%" height="70%" alt="走累了，坐在街边长椅上休息片刻，顺便等等被我们甩了几条街的舅父和舅妈!">
 
 👣景区里的护城河，清风拂柳，很是惬意。
 
-<img src="/images/IMG_20180519_170303-min.jpg" width="70%" height="70%" alt="景区里的护城河!">
+<img src="/images/huchenghe.jpg" width="70%" height="70%" alt="景区里的护城河!">
 
-<img src="/images/IMG_20180519_171934-min.jpg" width="70%" height="70%" alt="景区里的护城河!">
+<img src="/images/huchenghe1.jpg" width="70%" height="70%" alt="景区里的护城河!">
 
+👣在附一张巷子
+<img src="/images/xiangzi.jpg" width="70%" height="70%" alt="巷子！">
 👣好了，天不早了，该回去了。期待明天的我姐的婚礼😋。
