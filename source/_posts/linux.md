@@ -17,6 +17,7 @@ Windows10更新到1709（或者更早）版本后，Windows10系统自带了一�
 你已经安装完子系统，接下来去配置它，让它能够满足日常开发需求并且与Windows完美协作。
 {% blockquote %}
 1.安装node.js 按照下面依次执行 (参照https://nodejs.org/en/download/package-manager/)
+<b style="color: red">请注意每一步是否执行成功，否则检查每一步！</b>
 {% codeblock%}
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
