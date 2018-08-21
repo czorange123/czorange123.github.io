@@ -1,23 +1,16 @@
 ---
-title: 无法访问此网站，localhost 拒绝了我们的连接请求。
+title: Windows10子系统linux“无法访问此网站，localhost 拒绝了我们的连接请求”。
 date: 2018-03-28
 tags: [服务,系统]
 ---
-
-前几日在公司写代码，用的是windows系统搭配虚拟机安装linux环境，
-发现虚拟机写代码实在太卡，决定另辟蹊径。于是找到了windows10下
-的linux子系统，各种下载配置，终于弄好了。然后安装"node"、"npm"
-、"git" 全部安装好以后，拉下项目运行 "npm run dev" ,服务正常启动。
-运行在：localhost:8080下，然后点击访问： 问题出现了：浏览器显示
+作者遇到的这个问题是出现在windows10 linux子系统上的，所以可能只适用以下情况
 {% blockquote %}
-“无法访问此网站，localhost 拒绝了我们的连接请求。”
+windows10子系统linux运行服务
 {% endblockquote %}
-这到底是什么原因呢？
-上网查了好久，大多数说的是电脑本地“IIS”服务没有打开，根据步骤打开以后，
-重启服务发现依旧不能运行，还是之前那个问题，不过在浏览器地址栏输入
-“localhost” 似乎能访问一个页面了。但这对我没有任何帮助，没有解决我
-的问题。后来才发现是本地的一些软件：“加速器”，“安全防护”，“游戏助手”
-之类的一些软件的服务会禁止 “服务端口的启动”，导致8080或者4000端口没有
-正常启动，所以浏览器才“无法访问”，我卸载了“360电脑管家”，腾讯的“wegame”
-后，重启电脑，运行服务，发现能正常访问了，问题得到了解决。
+执行"hexo s"运行我的hexo博客，并提示服务已运行在"localhost:4000"，如下：
+<img src="/images/cmder.png" width="70%" height="70%" alt="">
+当我访问"localhost:4000"时，却出现“无法访问此网站，localhost 拒绝了我们的连接请求。”
+<img src="/images/localhost.png" width="70%" height="70%" alt="">
+后来查了github上的<a href="https://github.com/Microsoft/WSL/issues/1554#issuecomment-341407417" target="_blank">issues</a>，发现这个问题是电脑上某些软件导致的，tx的wegame的锅，不过tx官方表示会尽快修复，临时解决办法请点击<a href="https://github.com/Microsoft/WSL/issues/1554#issuecomment-341407417" target="_blank">issues</a>，按照官方的方法解决，或者直接卸载wegame，问题应该可以解决。
+
 The End😀
