@@ -70,7 +70,7 @@ $ cat rsa_github.pub
 步骤基本与生成GitHub sshkey一致，稍有不同，理解每一步的含义很重要
 
 ```shell
-$ `ssh-keygen -t rsa -C "your_name@gitlab.com"` （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
+$ ssh-keygen -t rsa -C "your_name@gitlab.com" （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
 ```
 在出现的信息后面输入与github区分的名称，比如`rsa_gitlab`,接着直接<b>回车</b>即可
 
