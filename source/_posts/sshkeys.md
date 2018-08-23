@@ -3,7 +3,7 @@ title: GitHub与GitLab同时使用ssh key的解决方案
 date: 2018-08-09 12:23:41
 tags: [linux,git]
 ---
-<h3 id="一、放在前面的话">一、放在前面的话</h3>
+<h3 id="放在前面的话">一、放在前面的话</h3>
 设置sshkey的目的是“免去每次提交代码都需要输入账号和密码”的操作，能更快速的提交或者部署项目。
 {% blockquote %}
 1、确保你安装了Git
@@ -17,10 +17,11 @@ GitLab使用的是企业邮箱，也就是你公司的邮箱
 {% endblockquote %}
 然后根据两者不同的邮箱分别去生成不同的sshkey
 
-<h3 id="二、根据GitHub邮箱生成sshkey">一、根据GitHub邮箱生成sshkey</h3>
-{% blockquote %}
-$ `ssh-keygen -t rsa -C "your_name@github.com"` （此处填写你的GitHub绑定的邮箱）
-{% endblockquote %}
+<h3 id="根据GitHub邮箱生成sshkey">一、根据GitHub邮箱生成sshkey</h3>
+
+```shell
+$ ssh-keygen -t rsa -C "your_name@github.com"（此处填写你的GitHub绑定的邮箱）
+```
 接着会出现类似如下信息：
 {% blockquote %}
 Generating public/private rsa key pair.
@@ -57,53 +58,55 @@ The key's randomart image is:
 +----[SHA256]-----+
 {% endblockquote %}
 这样就生成了rsa_github文件，此时打开rsa_github文件，怎样打开呢？
-{% blockquote %}
-$ `cd ~/.ssh`
-$ `ls` (会发现里面有两个文件: "rsa_github" 和 "rsa_github.pub")
-$ `cat rsa_github.pub`
-{% endblockquote %}
-然后复制粘贴到GitHub即可，如下:
+```shell
+$ cd ~/.ssh
+$ cat rsa_github.pub
+```
+出现的信息复制粘贴到GitHub即可，如下:
 <img src="/images/ssh_key.png" width="70%" height="70%" alt="ssh_key">
-到这里，先不要着急去使用，如果你还需要在这电脑上生成GitLab的sshkey,不妨先看下面的步骤 （要知道，你来到这里是为了同时使用GitHub&GitLab的）
-***
-<h3 id="三、根据GitLab邮箱生成sshkey">二、根据GitLab邮箱生成sshkey</h3>
+到这里，GitHub的sshkey已经添加成功，可以正常使用了。
+
+------
+
+<h3 id="根据GitLab邮箱生成sshkey">二、根据GitLab邮箱生成sshkey</h3>
 步骤基本与生成GitHub sshkey一致，稍有不同，理解每一步的含义很重要
 {% blockquote %}
 $ `ssh-keygen -t rsa -C "your_name@gitlab.com"` （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
 {% endblockquote %}
-在出现的信息后面输入与github区分的名称，比如<b>"rsa_gitlab"</b>,接着直接<b>回车</b>即可
+在出现的信息后面输入与github区分的名称，比如`rsa_gitlab`,接着直接<b>回车</b>即可
 
-这样就会在<b>~/.ssh</b>目录下生成两个新文件：`“rsa_gitlab”` 和 `“rsa_gitlab.pub”`
-当然这个目录下已经有了两个文件，是之前github生成的，先不管他。
-{% blockquote %}
-$ `cd ~/.ssh`
-$ `cat rsa_gitlab.pub`
-{% endblockquote %}
+这样就会在**~/.ssh**目录下生成两个新文件：`rsa_gitlab` 和 `rsa_gitlab.pub`
+
+```shell
+$ cd ~/.ssh
+$ cat rsa_gitlab.pub
+```
 复制出现的信息，粘贴到你的GitLab的sshkey页面上，如下：
 <img src="/images/sshkey.png" width="70%" height="70%" alt="ssh_key">
 OK,此时已经成功添加了两者的sshkey,但我们还需要一些配置去使用它。
-<h3 id="四、配置">三、配置</h3>
+<h3 id="配置">三、配置</h3>
 配置是为了让github与gitlab能够区分他们各自的sshkey，所以需要创建一个config文件来管理sshkeys
-{% blockquote %}
-$ `cd ~/.ssh/`
-$ `touch config`
-$ `sudo vim config`
-{% endblockquote %}
+
+```shell
+$ cd ~/.ssh/
+$ touch config
+$ sudo vim config
+```
 在config里面加上以下内容：
 {% blockquote %}
 <em># github</em>
 Host github.com
 HostName github.com
 PreferredAuthentications publickey
-IdentityFile ~/.ssh/<b>rsa_github</b>
-
+IdentityFile ~/.ssh/**rsa_github**
 <em># gitlab</em>
-Host <b>gitlab.company's web site.com</b>
-HostName <b>gitlab.company's web site.com</b>
+Host **gitlab.company's web site.com**
+HostName **gitlab.company's web site.com**
 PreferredAuthentications publickey
-IdentityFile ~/.ssh/<b>rsa_gitlab</b>
+IdentityFile ~/.ssh/**rsa_gitlab**
 {% endblockquote %}
-<b style="color: red">注：加粗的地方根据自己实际情况进行修改</b>，然后保存即可。
+
+**注：加粗的地方根据自己实际情况进行修改**.
 
 现在你应该能正常使用了
 The End😀
