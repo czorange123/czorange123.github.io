@@ -27,9 +27,7 @@ $ ssh-keygen -t rsa -C "your_name@github.com"（此处填写你的GitHub绑定�
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user_name/.ssh/id_rsa):
 {% endblockquote %}
-此时输出一个名称，最好有意义的名称，比如：`rsa_github`
-
-接着会出现：
+此时输出一个名称，最好有意义的名称，比如：`rsa_github`，回车，接着会出现：
 {% blockquote %}
 Enter passphrase (empty for no passphrase): => 提示你输入密码（我一般会留空）==>回车即可
 Enter same passphrase again: => 提示再次输入密码 ==>回车即可
@@ -70,9 +68,10 @@ $ cat rsa_github.pub
 
 <h3 id="根据GitLab邮箱生成sshkey">二、根据GitLab邮箱生成sshkey</h3>
 步骤基本与生成GitHub sshkey一致，稍有不同，理解每一步的含义很重要
-{% blockquote %}
+
+```shell
 $ `ssh-keygen -t rsa -C "your_name@gitlab.com"` （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
-{% endblockquote %}
+```
 在出现的信息后面输入与github区分的名称，比如`rsa_gitlab`,接着直接<b>回车</b>即可
 
 这样就会在**~/.ssh**目录下生成两个新文件：`rsa_gitlab` 和 `rsa_gitlab.pub`
