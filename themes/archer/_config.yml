@@ -65,7 +65,7 @@ algolia_search:
 # If you want to add other comment plugin, edit in "custom.ejs"
 comment:
   # Livere  site: https://livere.com/
-  livere_uid: MTAyMC8zNzUyNC8xNDA1Ng
+  livere_uid: MTAyMC8zNzUyNC8xNDA1Ng==
   # Disqus  site: https://disqus.com/
   disqus_shortname: 
   # Changyan  site: http://changyan.kuaizhan.com/
