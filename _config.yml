@@ -98,3 +98,10 @@ deploy:
     excerpt: false
     categories: true
     tags: true
+
+# hexo-algolia
+algolia:
+  applicationID: 'W2YOK1M05Z'
+  apiKey: '3de9b7260328e05807aa08b52095c7d3'
+  indexName: 'zcheng.site'
+  chunkSize: 5000
