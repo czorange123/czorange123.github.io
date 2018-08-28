@@ -23,11 +23,11 @@ $ sudo apt-get install -y nodejs
 ```
 2.安装git 按照下面执行(参照[官方文档](https://git-scm.com/download/linux))
 ```shell
-$ `apt-get install git`
+$ apt-get install git
 ```
 3.（非必须）当然，如果你要玩个人网站(hexo博客等）需要安装hexo(参照[官方文档](https://hexo.io/zh-cn/docs/index.html))
 ```shell
-$ `npm install -g hexo-cli`
+$ npm install -g hexo-cli
 ```
 到这一步，你已经具备了开发环境所必要的工具和包，并且可以通过git拉取代码进行开发了，至于子系统的图形界面，你可以把Windows10作为子系统图形界面进行操作
 
