@@ -20,6 +20,7 @@ GitLab使用的是企业邮箱，也就是你公司的邮箱
 <h3 id="根据GitHub邮箱生成sshkey">一、根据GitHub邮箱生成sshkey</h3>
 
 ```shell
+$ cd ~
 $ ssh-keygen -t rsa -C "your_name@github.com"（此处填写你的GitHub绑定的邮箱）
 ```
 接着会出现类似如下信息：
@@ -27,7 +28,7 @@ $ ssh-keygen -t rsa -C "your_name@github.com"（此处填写你的GitHub绑定�
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user_name/.ssh/id_rsa):
 {% endblockquote %}
-此时输出一个名称，最好有意义的名称，比如：`rsa_github`，回车，接着会出现：
+此时输出一个名称，最好有意义的名称，比如：`rsa_github`, 如果不输入则默认为`id_rsa`, 接着会出现：
 {% blockquote %}
 Enter passphrase (empty for no passphrase): => 提示你输入密码（我一般会留空）==>回车即可
 Enter same passphrase again: => 提示再次输入密码 ==>回车即可
@@ -35,7 +36,7 @@ Enter same passphrase again: => 提示再次输入密码 ==>回车即可
 最后会出现：
 {% blockquote %}
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/user_name/.ssh/id_rsa): rsa_github
+Enter file in which to save the key (/home/user_name/.ssh/id_rsa): `rsa_github`
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in rsa_github.
@@ -55,7 +56,7 @@ The key's randomart image is:
 |        oo.    +=|
 +----[SHA256]-----+
 {% endblockquote %}
-这样就生成了rsa_github文件，此时打开rsa_github文件，怎样打开呢？
+这样就生成了`rsa_github`，查看`rsa_github`：
 ```shell
 $ cd ~/.ssh
 $ cat rsa_github.pub
@@ -70,6 +71,7 @@ $ cat rsa_github.pub
 步骤基本与生成GitHub sshkey一致，稍有不同，理解每一步的含义很重要
 
 ```shell
+$ cd ~
 $ ssh-keygen -t rsa -C "your_name@gitlab.com" （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
 ```
 在出现的信息后面输入与github区分的名称，比如`rsa_gitlab`,接着直接<b>回车</b>即可
