@@ -2,7 +2,7 @@
 # avatar
 avatar: /avatar/Dog.jpg
 # author name
-author: Orange
+author: Oranges
 # signature
 signature: Be yourself
 # SNS (you can custom the order)
@@ -38,11 +38,11 @@ about:
 
 # ========== Site ========== #
 # title of the site
-SEO_title: Oranges'lair
+SEO_title: Oranges
 # main title
-main_title: Oranges'lair.
+main_title: Oranges.
 # subtitle
-subtitle: All work and no play make Jack a dull boy
+subtitle: Do What You Do.
 # site haeder image
 site_header_image: '/intro/index-bg.jpg'
 # post haeder image
