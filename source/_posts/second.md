@@ -8,7 +8,7 @@ tags: [工具,sublime]
 想了想，应该是安装成功，没有配置的问题。接下来进入正题：
 
 {% blockquote %}
-1.安装git,去官网下载windows版本git => https://git-scm.com/downloads
+1.安装git,去官网下载windows版本git => [git官网](https://git-scm.com/downloads)
 
 2.安装过程，全部下一步。
 
