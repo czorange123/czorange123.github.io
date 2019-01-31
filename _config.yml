@@ -107,3 +107,9 @@ algolia:
   apiKey: '3de9b7260328e05807aa08b52095c7d3'
   indexName: 'zcheng.site'
   chunkSize: 5000
+
+# hexo-admin authentification
+admin:
+  username: oranges
+  password_hash: $2a$10$9Ls1XBPIrRI/KIUsQeOrzuG22kzm3p6OcQFPwxmdM4uC6VcWW8Uji
+  secret: Secret
