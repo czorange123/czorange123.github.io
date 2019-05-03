@@ -4,7 +4,7 @@
 
 # Site
 title: Orange
-subtitle: 努力撸代码ing
+subtitle: be yourself
 description: Welcome
 author: orange
 language: 
@@ -42,7 +42,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -51,7 +51,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: archer
+theme: theme-bmw
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -82,31 +82,31 @@ deploy:
   # branch: master
 
   #archer =>tags
-  jsonContent:
-  meta: false
-  pages: false
-  posts:
-    title: true
-    date: true
-    path: true
-    text: false
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    categories: true
-    tags: true
+  # jsonContent:
+  # meta: false
+  # pages: false
+  # posts:
+  #   title: true
+  #   date: true
+  #   path: true
+  #   text: false
+  #   raw: false
+  #   content: false
+  #   slug: false
+  #   updated: false
+  #   comments: false
+  #   link: false
+  #   permalink: false
+  #   excerpt: false
+  #   categories: true
+  #   tags: true
 
 # hexo-algolia
-algolia:
-  applicationID: 'W2YOK1M05Z'
-  apiKey: '3de9b7260328e05807aa08b52095c7d3'
-  indexName: 'zcheng.site'
-  chunkSize: 5000
+# algolia:
+#   applicationID: 'W2YOK1M05Z'
+#   apiKey: '3de9b7260328e05807aa08b52095c7d3'
+#   indexName: 'zcheng.site'
+#   chunkSize: 5000
 
 # hexo-admin authentification
 admin:

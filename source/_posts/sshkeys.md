@@ -1,7 +1,9 @@
 ---
 title: GitHub与GitLab同时使用ssh key的解决方案
 date: 2018-08-09 12:23:41
-tags: [linux,git]
+tags:
+	- linux
+	- git
 ---
 <h3 id="放在前面的话">一、放在前面的话</h3>
 设置sshkey的目的是“免去每次提交代码都需要输入账号和密码”的操作，能更快速的提交或者部署项目。

@@ -1,7 +1,9 @@
 ---
 title: “windows下sublime 安装GitGutter插件无法正常使用”的问题
 date: 2018-03-28 19:18:18
-tags: [工具,sublime]
+tags:
+	-工具
+	-sublime
 ---
 
 前几日开始使用windows下的子系统，在sublime安装“GitGutter插件”时，Gitgutter 控制台遇到:{% blockquote %}git -veision [WinError 2] “无法找到指定文件”{% endblockquote %}
