@@ -44,20 +44,17 @@ Base64是一种基于64个可打印字符来表示二进制数据的表示方法
     }
   },
 ```
-
-注意：
+<h3 id="注意事项">注意事项</h3>
 {% blockquote %}
-`base64_photo`在`reader.onload`函数中，而`reader.onload`又在`deal`函数中，形成**闭包**，所以在外部无法访问到`base64_photo`，想在外部引用base64_photo就要另辟蹊径
+`base64_photo`在`reader.onload`函数中，而`reader.onload`又在`deal`函数中，形成**闭包**，所以在外部无法访问到`base64_photo`，想在外部引用`base64_photo`就要另辟蹊径
 {% endblockquote %}
 在这里提供一个方法，可以将`base64_photo`定义为全局变量，这样就能在函数外部访问到
 
 ```javascript
-// 定义一个全局变量
-<script>
+// 全局变量与局部变量
 let base64_photo = ''; // 全局变量
 function a() {
   let base64_photo = ''; // 局部变量
 }
-</script>
 ```
 The End😀
