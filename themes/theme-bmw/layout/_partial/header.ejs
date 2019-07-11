@@ -1,7 +1,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="董沅鑫, yuanxin.me@gmail.com" />
+  <meta name="author" content="oranges, 1451426471@qq.com" />
   <% if(is_home() && page.current > 1){ %>
     <meta name="robots" content="noindex" />
   <% } %>
@@ -85,4 +85,13 @@
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
   <% } %>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126364107-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126364107-1');
+  </script>
 </head>
