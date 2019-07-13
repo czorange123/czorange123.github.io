@@ -77,8 +77,9 @@ theme: theme-bmw
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/czorange123/czorange123.github.io.git
-  # repo: git@47.99.216.45:/home/git/blog.git
+  message: update something
+  # repo: https://github.com/czorange123/czorange123.github.io.git
+  repo: root@47.99.216.45:/var/www/blog.git,master
   # branch: master
 
   #archer =>tags
