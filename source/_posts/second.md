@@ -1,5 +1,5 @@
 ---
-title: “windows下sublime 安装GitGutter插件无法正常使用”的问题
+title: “Windows下sublime 安装GitGutter插件无法正常使用”的问题
 date: 2018-03-28 19:18:18
 tags:
 	- 工具
