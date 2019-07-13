@@ -66,7 +66,7 @@ copyright:
 # start: 建站时间. 格式：YYYY-MM-DD
 # more: 自定义页脚信息(支持HTML)
 footer:
-  start: '2018-11-04'
+  start: '2017-11-04'
   more: Oranges' blog
 
 # 如何开启 评论&统计 插件：https://godbmw.com/passages/2018-11-15-theme-bmw-docs-zh/
@@ -97,7 +97,7 @@ nav:
     name: 标签
     path: /tags/
   -
-    name: 友链
+    name: 朋友
     path: /friends/
   -
     name: 关于
@@ -113,17 +113,14 @@ nav:
 # 友链详细信息：支持多个友链
 friends:
   -
-    nickname: Yuang # 昵称
-    avatar:  /images/friends.jpg # 头像链接
+    nickname: Ayu # 昵称
     site: https://yuang.site # 站点地址
     meta: # 站点描述
   -
     nickname: Lxwu # 昵称
-    avatar:  /images/friends.jpg # 头像链接
     site: https://lxwu.me # 站点地址
     meta: # 站点描述
   -
     nickname: Sdu # 昵称
-    avatar:  /images/friends.jpg # 头像链接
     site: https://meditator.cc # 站点地址
     meta: # 站点描述
