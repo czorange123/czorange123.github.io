@@ -10,7 +10,7 @@
       <% for(let link of theme.nav){ %>
         <li class="nav-item" data-path="<%- link.path %>">
           <% if(!link.children) { %>
-            <a 
+            <a
               href="<%- url_for(link.path) %>"
               target="<%- link.blank ? '_blank' : '_self' %>"
             >
@@ -21,8 +21,8 @@
             <ul class="nav-menu--dropdown">
               <% for(let childrenLink of link.children){ %>
                 <li>
-                  <a 
-                    href="<%- url_for(childrenLink.path)%>" 
+                  <a
+                    href="<%- url_for(childrenLink.path)%>"
                     target="<%- childrenLink.blank ? '_blank' : '_self' %>"
                   >
                     <%- childrenLink.name %>
@@ -66,9 +66,9 @@
     iconMenuClicked = false;
   let navDOM = document.querySelector("nav.site-navigation");
   iconMenu.addEventListener("click", () => {
-    iconMenuClicked 
+    iconMenuClicked = !iconMenuClicked;
+    iconMenuClicked
       ? navDOM.className = "site-navigation active"
       : navDOM.className = "site-navigation";
-    iconMenuClicked = !iconMenuClicked;
   })
 </script>

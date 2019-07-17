@@ -30,20 +30,18 @@
     title = "朋友"
   }
   %>
-  
+
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
   <% if ((page.tags && page.tags.length) || (page.categories && page.categories.length)) { %>
     <meta name="keywords" content="<% page.categories.forEach(function(category) { %><%= category.name %>,<% }); %><% page.tags.forEach(function(tag) { %><%= tag.name %>,<% }); %>" />
   <% } else { %>
     <meta name="keywords" content="<%= theme.keywords %>" />
   <% } %>
-
-  <script>
-    console.log('\n%c Hexo-theme-bmw v4.0 ' + '%c 🎉 https://github.com/dongyuanxin/theme-bmw 🎉\n' + '\n%c View demo online ' + '%c 🔍 https://godbmw.com/ 🔍  \n' , 'color: #fadfa3; background: #030307; padding:3px 0;', '', 'color: #fadfa3; background: #030307; padding:3px 0;', '');
-  </script>
 
   <% if(config.description){ %>
     <meta name="description" content="<%= config.description %>">
@@ -75,11 +73,11 @@
   <% if(theme.social_share.enable){ %>
     <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
   <% } %>
-  
+
   <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" async></script>
-  
-  <% if(theme.leancloud.appid && 
-    theme.leancloud.appkey && 
+
+  <% if(theme.leancloud.appid &&
+    theme.leancloud.appkey &&
     (theme.leancloud.comment || theme.leancloud.timer))
   { %>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
