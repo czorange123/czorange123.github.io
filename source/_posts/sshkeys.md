@@ -1,120 +1,109 @@
 ---
-title: GitHub与GitLab同时使用ssh key的解决方案
+title: ssh key密钥生成与使用
 date: 2018-08-09 12:23:41
 tags:
     - linux
     - git
 ---
 
-### 前面要说的话
-设置sshkey的目的是“免去每次提交代码都需要输入账号和密码”的操作，能更快速的提交或者部署项目。
+### 生成密钥ssh key
 
-> 确保你安装了Git
-确保在linux环境下（windows下需安装windows版本的git，然后打开桌面右键菜单打开gitbash同样适用）
-
-> 首先，GitHub与GitLab不同的是他们的注册的邮箱肯定是不一样的
-GitHub使用的是私人邮箱，最常见的比如qq邮箱
-GitLab使用的是企业邮箱，也就是你公司的邮箱
-
-Let's do it😀
-
-然后根据两者不同的邮箱分别去生成不同的sshkey
-
-### 根据GitHub邮箱生成sshkey
-
+#### 第一步
+在命令行输入以下命令来生成ssh key
 ```shell
-$ cd ~
-$ ssh-keygen -t rsa -C "your_name@github.com"（此处填写你的GitHub绑定的邮箱）
+ssh-keygen -t rsa
 ```
-接着会出现类似如下信息：
-
-> Generating public/private rsa key pair.
-Enter file in which to save the key (/home/user_name/.ssh/id_rsa):
-
-此时输出一个名称，最好有意义的名称，比如：`rsa_github`, 如果不输入则默认为`id_rsa`
-接着会出现：
-
-> Enter passphrase (empty for no passphrase): => 提示你输入密码（我一般会留空）==>回车即可
-Enter same passphrase again: => 提示再次输入密码 ==>回车即可
-
-最后会出现：
-> Generating public/private rsa key pair.
-  Enter file in which to save the key `(/home/user_name/.ssh/id_rsa)`: `rsa_github`
-  Enter passphrase (empty for no passphrase):
-  Enter same passphrase again:
-  Your identification has been saved in rsa_github.
-  Your public key has been saved in rsa_github.pub.
-  The key fingerprint is:
-  SHA256:zUXma9igea9llTvtRqLd+LzUQhoXuKWAWr24C3+W5Z0 your_name@github .com
-  The key's randomart image is:
-  +---[RSA 2048]----+
-  |            o    |
-  |         o + .   |
-  |        o + + o  |
-  |       o * B = o |
-  |      . S * B =  |
-  |         o o.*.oo|
-  |      . .  +=++Bo|
-  |       o .++o E=o|
-  |        oo.    +=|
-  +----[SHA256]-----+
-
-这样就生成了`rsa_github`，注意上面信息中标黄色的字，表示生成的`key`所在目录。
-接下来我们要查看生成的`rsa_github`，将里面的内容复制粘贴到github里面去。
-查看`rsa_github`：
+会出现以下信息：
 ```shell
-$ cd ~/.ssh
-$ cat rsa_github.pub
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/orange/.ssh/id_rsa):
 ```
-出现的信息复制粘贴到GitHub即可，如下:
-![github ssh key](/images/sshkeys/ssh_key_github.png)
-到这里，GitHub的sshkey已经添加成功，可以正常使用了。
+以上信息告诉我们要输入一个文件名来存储`ssh key`，它的存储目录为`/home/orange/.ssh/`。（如果什么都不输入，那么文件名默认为`id_rsa`），这里我们使用默认文件名，直接按回车<kbd>Enter</kbd>进入下一步。
 
----
-
-### 根据GitLab邮箱生成sshkey
-
-步骤基本与生成GitHub sshkey类似，稍有不同，理解每一步的含义很重要
-
+#### 第二步
+会出现以下信息：(第3 ~ 4行出现的信息)
 ```shell
-$ cd ~
-$ ssh-keygen -t rsa -C "your_name@gitlab.com" （此处填写你的GitLab绑定的邮箱，一般为企业邮箱）
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/orange/.ssh/id_rsa):
+Created directory '/home/orange/.ssh'.
+Enter passphrase (empty for no passphrase):
 ```
-在出现的信息后面输入与github区分的名称，比如`rsa_gitlab`,接着直接<b>回车</b>即可
+以上信息告诉我们自动创建了目录`/home/orange/.ssh`来存储`ssh key`文件，然后需要为`ssh key`创建密码（什么都不输入，默认为无密码），这里我们不需要设置密码，直接按回车<kbd>Enter</kbd>进入下一步。
 
-这样就会在**~/.ssh**目录下生成两个新文件：`rsa_gitlab` 和 `rsa_gitlab.pub`
-
+#### 第三步
+会出现以下信息：(第5行出现的信息)
 ```shell
-$ cd ~/.ssh
-$ cat rsa_gitlab.pub
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/orange/.ssh/id_rsa):
+Created directory '/home/orange/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 ```
-复制出现的信息，粘贴到你的GitLab的sshkey页面上，如下：
-![gitlab ssh key](/images/sshkeys/ssh_key_gitlab.png)
-OK,此时已经成功添加了两者的sshkey,但我们还需要一些配置去使用它。
-### 配置
+直接回车<kbd>Enter</kbd>进入下一步。
 
-配置是为了让github与gitlab能够区分他们各自的sshkey，所以需要创建一个config文件来管理sshkeys
-
+#### 第四步
+会出现以下信息：(第6 ~ 21行出现的信息)
 ```shell
-$ cd ~/.ssh/
-$ touch config
-$ sudo vim config
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/orange/.ssh/id_rsa):
+Created directory '/home/orange/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/orange/.ssh/id_rsa.
+Your public key has been saved in /home/orange/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:wMJW8YgH0fYCbKwnE2qDuoviuoHxBVty11dbDotpU54 orange@orange
+The key's randomart image is:
++---[RSA 2048]----+
+|   oooo.    + .  |
+|  ..==o+   * B   |
+|..o+Bo*.o * E .  |
+|oo+B.+...o .     |
+|+ o+.  .S        |
+|oo .             |
+|o..              |
+|+.               |
+|O+               |
++----[SHA256]-----+
 ```
-在config里面加上以下内容：
-{% blockquote %}
-<em># github</em>
-Host github.com
-HostName github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/`rsa_github`
-<em># gitlab</em>
-Host `gitlab.company's web site.com`
-HostName `gitlab.company's web site.com`
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/`rsa_gitlab`
-{% endblockquote %}
+到这一步，我们就生成了`id_rsa`，ssh key就储存在这个文件中。我们需要查看这个文件，把里面的内容复制到需要的地方。（github、 gitlab、 远程服务器等。）
+#### 查看`id_rsa`文件
+```shell
+cat ~/.ssh/id_rsa.pub
+```
+会出现类型以下信息：（`id_rsa.pub`文件内容）
+```shell
+ssh-rsa AAAAB3NzaC1yc2EAAfR1V3LgCM/J/6fDTLXRhLv1GCxU3m4P09yRI6TNmDYDPrdu4l
+VS0ukSRZISmtzekcP4ra3KyXRa/npf4FztH2Peq+NiBlk5zCrgAd+sdXTcrtte1foVFrMa9vIZ
+nrAGIAAAAB3NzaC1yc2EAAfR1V3LgCM/J/6fDTLXRhLv1GCxU3m4P09yRI6TNmDYDPrdu4lVS0
+ukSRZISmtzekcP4ra3KyXRa/npf4FztH2Peq+NiBlk5zCrgAd+sdXTcrtte1foVFrMa9vIZnrAGI orange@orange
+```
+### github配置 ssh key
 
-**注：标注的地方根据自己实际情况进行修改**.
+复制以上出现的一大串内容，粘贴到自己github里面，这样以后，在当前电脑上提交/拉取代码的时候就不再需要输入密码。（其他没有生成ssh key的电脑上需要输入密码）。具体见下图：
+![](/images/sshkeys/ssh_key_github.png)
 
-现在你应该能正常使用了
+### gitlab配置 ssh key
+
+类似于github配置步骤，这里不再具体说明😜。
+
+### 远程服务器配置ssh key免密码登录
+##### 正常登录远程服务器流程：
+```shell
+ssh user@服务器ip地址
+```
+出现以下信息：
+```shell
+user@服务器ip地址's password:
+```
+输入正确密码才能登录上去。
+
+##### 接下来配置无密码登录
+先通过密码登录到服务器，然后：
+```shell
+cd ~/.ssh/
+vim authorized_keys
+```
+将ssh key粘贴进去，保存，退出重新登录即可不用输入密码。
+
 The End😀
