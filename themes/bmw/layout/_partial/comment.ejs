@@ -1,6 +1,13 @@
 <a href="#comment" class="comment-anchor"></a>
-<div class="comment-title"></div>
-<div id="vcomments"></div>
+
+<% if(theme.leancloud.comment) { %>
+  <div class="comment-title"></div>
+  <div id="vcomments"></div>
+<% } %>
+
+<% if(theme.gitalk.comment) { %>
+  <div id="gitalk-container"></div>
+<% } %>
 
 <script defer>
   if( <%- theme.leancloud.comment %> ) {
@@ -15,5 +22,18 @@
       placeholder: "正确填写邮箱, 才能及时收到回复哦♪(^∇^*)",
       path
     });
+  }
+  if ( <%- theme.gitalk.comment %> ) {
+    var gitalk = new Gitalk({
+      clientID: "<%- theme.gitalk.clientID %>",
+      clientSecret: "<%- theme.gitalk.clientSecret %>",
+      repo: "<%- theme.gitalk.repo %>",
+      owner: "<%- theme.gitalk.owner %>",
+      admin: "<%- theme.gitalk.admin %>",
+      id: location.pathname,
+      distractionFreeMode: "<%- theme.gitalk.distractionFreeMode %>"
+    })
+
+    gitalk.render('gitalk-container')
   }
 </script>

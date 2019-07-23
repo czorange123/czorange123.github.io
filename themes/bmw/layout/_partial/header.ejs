@@ -57,7 +57,7 @@
   <% } %>
 
   <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-  <%- css(['/css/base.css', '/icon/iconfont.css' ,'/css/github-markdown.css', '/css/highlight.css']) %>
+  <%- css(['/css/base.css', '/icon/iconfont.css' ,'/css/github-markdown.css', '/css/highlight.css', '/css/gitalk.css']) %>
 
   <%- js(['/js/util.js', '/js/valine.min.js']) %>
 
@@ -82,6 +82,9 @@
   { %>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
   <% } %>
+
+  <!-- gitalk comments -->
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126364107-1"></script>

@@ -79,6 +79,7 @@ header {
       color: #666;
       font-weight: 700;
       font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+
   }
 
 .site-navigation {
@@ -571,10 +572,8 @@ header {
     float: left;
     margin-top: 5px;
     margin-right: 1em; }
-  .card .card-header {
-    font-style: italic; }
     .card .card-header a {
-      font-style: normal;
+      font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
       color: #f03838;
       font-weight: bold;
       text-decoration: none; }
