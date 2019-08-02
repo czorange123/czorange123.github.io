@@ -232,4 +232,10 @@ html代码部分没有改变，仅仅将`height`改为`max-height`了，并且�
 - gif录制过程中难免出现卡顿掉帧现象，本页面所有效果图不能代表实际实现效果。
 - gif录制软件[ScreenToGif](https://github.com/NickeManarin/ScreenToGif)。
 
+#### demo & 项目地址
+- [demo](https://czorange123.github.io/nuxt-admin)
+- [项目地址](https://github.com/czorange123/nuxt-admin)
+- [menu组件代码](https://github.com/czorange123/nuxt-admin/blob/master/components/layouts/Menubar/NewMenu.vue)
+- [transition动画代码](https://github.com/czorange123/nuxt-admin/blob/master/utils/collapse-transition.js)
+
 The End😀
