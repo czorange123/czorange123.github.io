@@ -25,7 +25,7 @@ Windows10更新到1709（或者更早）版本后，Windows10系统自带了一�
 
 1.安装node.js 按照下面依次执行 (参照[官方文档](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions))  <b style="color: red">请注意每一步是否执行成功，否则检查每一步！</b>
 ```shell
-$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+$ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 2.安装git 按照下面执行(参照[官方文档](https://git-scm.com/download/linux))
