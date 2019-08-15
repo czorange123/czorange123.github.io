@@ -2,8 +2,8 @@
 title: Windows10子系统linux“无法访问此网站，localhost 拒绝了我们的连接请求”。
 date: 2018-03-28
 tags:
-	- 服务
-	- 系统
+    - 服务
+    - 系统
 ---
 作者遇到的这个问题是出现在windows10 linux子系统上的，所以可能只适用以下情况
 
