@@ -77,10 +77,11 @@ theme: bmw
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  message: update something
-  # repo: https://github.com/czorange123/czorange123.github.io.git
+  message: update pages
   repo: root@47.99.216.45:/var/www/blog.git,master
-  # branch: master
+
+  # repo: https://github.com/czorange123/blog.git
+  # branch: gh-pages
 
   #archer =>tags
   # jsonContent:
