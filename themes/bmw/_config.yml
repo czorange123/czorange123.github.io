@@ -84,7 +84,12 @@ gitalk:
   owner: czorange123
   admin: czorange123
   distractionFreeMode: false
-  comment: true # 是否开启评论系统
+  enable: true # 是否开启评论系统
+
+# Google Analytics
+gtag:
+  enable: true
+  gtagkey: UA-126364107-1
 
 # 导航栏头部名称
 nav_name: Oranges

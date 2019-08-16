@@ -23,7 +23,7 @@
       path
     });
   }
-  if ( <%- theme.gitalk.comment %> ) {
+  if ( <%- theme.gitalk.enable %> ) {
     var gitalk = new Gitalk({
       clientID: "<%- theme.gitalk.clientID %>",
       clientSecret: "<%- theme.gitalk.clientSecret %>",
