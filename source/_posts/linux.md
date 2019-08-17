@@ -2,8 +2,8 @@
 title: Windows10子系统Ubuntu体验
 date: 2018-06-21 10:03:20
 tags:
-    - linux
-    - 工具
+	- linux
+	- 工具
 ---
 Windows10更新到1709（或者更早）版本后，Windows10系统自带了一个linux子系统模块，如果你想换个环境写代码，体验体验Winodws10的子系统，就可以接着往下看
 
@@ -25,12 +25,12 @@ Windows10更新到1709（或者更早）版本后，Windows10系统自带了一�
 
 1.安装node.js 按照下面依次执行 (参照[官方文档](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions))  <b style="color: red">请注意每一步是否执行成功，否则检查每一步！</b>
 ```shell
-$ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 2.安装git 按照下面执行(参照[官方文档](https://git-scm.com/download/linux))
 ```shell
-$ apt-get install git
+$ sudo apt-get install git
 ```
 3.（非必须）当然，如果你要玩个人网站(hexo博客等）需要安装hexo(参照[官方文档](https://hexo.io/zh-cn/docs/index.html))
 ```shell
