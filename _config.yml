@@ -82,7 +82,7 @@ deploy:
   branch: master
 
   # 部署github pages
-  # repo: https://github.com/czorange123/blog.git
+  # repo: https://github.com/zchengsite/blog.git
   # branch: gh-pages
 
   #archer =>tags

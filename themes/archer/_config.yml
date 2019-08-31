@@ -8,7 +8,7 @@ signature: Be yourself
 # SNS (you can custom the order)
 social:
   email: 1451426471@qq.com
-  github: //github.com/czorange123
+  github: //github.com/zchengsite
   # wechat and qq should be a path of qr-code image
   wechat: /assets/example_qr.png
   qq: 
