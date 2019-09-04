@@ -148,7 +148,7 @@ $ hexo deploy
 
 #### demo & 项目地址
 
-- [demo在线地址](https://czorange123.github.io/username.github.io/)
-- [项目地址](https://github.com/czorange123/username.github.io/tree/master)
+- [demo在线地址](https://zchengsite.github.io/username.github.io/)
+- [项目地址](https://github.com/zchengsite/username.github.io)
 
 The End😀

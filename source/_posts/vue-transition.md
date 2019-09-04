@@ -233,9 +233,9 @@ html代码部分没有改变，仅仅将`height`改为`max-height`了，并且�
 - gif录制软件[ScreenToGif](https://github.com/NickeManarin/ScreenToGif)。
 
 #### demo & 项目地址
-- [demo](https://czorange123.github.io/nuxt-admin)
-- [项目地址](https://github.com/czorange123/nuxt-admin)
-- [menu组件代码](https://github.com/czorange123/nuxt-admin/blob/master/components/layouts/Menubar/NewMenu.vue)
-- [transition动画代码](https://github.com/czorange123/nuxt-admin/blob/master/utils/collapse-transition.js)
+- [demo](https://zchengsite.github.io/nuxt-admin/)
+- [项目地址](https://github.com/zchengsite/nuxt-admin)
+- [menu组件代码](https://github.com/zchengsite/nuxt-admin/blob/master/components/layouts/Menubar/NewMenu.vue)
+- [transition动画代码](https://github.com/zchengsite/nuxt-admin/blob/master/utils/collapse-transition.js)
 
 The End😀
