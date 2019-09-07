@@ -11,6 +11,5 @@ tags:
 - 对以上两点的总结与感悟？（笑）。
 - 自娱自乐，仅此。
 
-> As long as you have a good story and an audience, you are not really finished.
 
 The End🙃
