@@ -57,10 +57,10 @@ $ sudo apt-get install git
 ### 2. 新建一个repository
 
 如下图所示
-![](/images/hexo/new_a_repository.png)
+![](/images/hexo-build/new_a_repository.png)
 
 点击`New repository`后会出现
-![](/images/hexo/creating_repository.png)
+![](/images/hexo-build/creating_repository.png)
 
 注意这里的`Repository name`文本框。`黄色`框起来的`username`你可以随便取名。<code style="color: #3a95e4">浅蓝色</code>框起来的<code style="color: #3a95e4">github.io</code>必须得填<code style="color: #3a95e4">github.io</code>。也就是形式得是username.`github.io`。至于为什么，具体看[官方说明](https://pages.github.com/)。
 
@@ -68,7 +68,7 @@ $ sudo apt-get install git
 
 ### 3. 拉取repository到本地电脑
 
-![](/images/hexo/clone_repository.png)
+![](/images/hexo-build/clone_repository.png)
 
 ```shell
 # 拉取username.github.io.git到本地
@@ -107,17 +107,17 @@ $ git push
 ```
 
 提交上去后github上项目是这样的
-![](/images/hexo/gitpush.png)
+![](/images/hexo-build/gitpush.png)
 
 ### 5. 部署项目
 
 使用编辑器打开项目（blog）文件夹，在根目录下找到`_config.yml`文件，修改`deploy`配置，如下
 
 1. 修改root配置
-![](/images/hexo/update_config.png)
+![](/images/hexo-build/update_config.png)
 
 2. 修改deploy配置
-![](/images/hexo/deploy_gh-pages.png)
+![](/images/hexo-build/deploy_gh-pages.png)
 
 3. 然后开始部署
 ```shell
@@ -132,10 +132,10 @@ $ hexo deploy
 ### 6. 在线访问
 
 打开github刚提交的项目，点击settings，如下
-![](/images/hexo/github_settings.png)
+![](/images/hexo-build/github_settings.png)
 
 往下滚动找到`GitHub Pages`
-![](/images/hexo/gh-pages.png)
+![](/images/hexo-build/gh-pages.png)
 
 通过链接即可访问部署好的博客
 
