@@ -1,5 +1,3 @@
 <div class="container">
-  <% site.posts.sort("date", "desc").each(function(post){ %>
-  <%- partial("_partial/post_entry", {post: post}) %>
-  <% }) %>
+  <%- partial('_partial/post_entry') %>
 </div>

@@ -29,10 +29,10 @@
     </div>
   <% } %>
   <% for(let psg of page.posts.data){ %>
-  <% 
+  <%
     nowYear = getPostYear(psg);
-    if(nowYear !== prevYear){ 
-      prevYear = nowYear; 
+    if(nowYear !== prevYear){
+      prevYear = nowYear;
   %>
     <div class="collection-title">
       <h2>
