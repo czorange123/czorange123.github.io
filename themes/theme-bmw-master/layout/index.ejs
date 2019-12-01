@@ -50,11 +50,11 @@ const getRealPath = pathname => {
       <%- partial("_partial/player", {playlist: psg.playlist, id: getRealPath(psg.path), listFolded: false, style: 'margin: 4rem 2px -1rem'}) %>
     <% } %>
     <!-- 文章简介 -->
-    <div class="article-content">
+<!--     <div class="article-content">
       <div class="markdown-body article-content--inner" v-html="mdToHtml(psg.summary)">
         <%- psg.excerpt %>
       </div>
-    </div>
+    </div> -->
     <div class="article-footer">
       <div class="article-meta pull-left">
         <!-- 分类pc端可见 -->
@@ -76,7 +76,7 @@ const getRealPath = pathname => {
                 </a>
               </span>
             <% } %>
-          <% } %>          
+          <% } %>
         </span>
       </div>
       <% if(theme.leancloud.timer){ %>

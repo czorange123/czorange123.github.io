@@ -4,7 +4,7 @@
     <% if(!is_archive()){ %>
       <span>当前位于 <%- page.current%>/<%- page.total -%> 页</span>
     <% }else{ %>
-      <span>共有 <%- site.posts.length %> 篇文章 🙃</span>
+      <span>Wow! 一共有 <%- site.posts.length %> 篇文章</span>
     <% } %>
   </span>
   <% 
@@ -29,10 +29,10 @@
     </div>
   <% } %>
   <% for(let psg of page.posts.data){ %>
-  <%
+  <% 
     nowYear = getPostYear(psg);
-    if(nowYear !== prevYear){
-      prevYear = nowYear;
+    if(nowYear !== prevYear){ 
+      prevYear = nowYear; 
   %>
     <div class="collection-title">
       <h2>
