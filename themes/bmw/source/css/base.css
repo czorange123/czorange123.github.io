@@ -1034,7 +1034,7 @@ a:hover {
 
 .container {
   max-width: 900px;
-  min-height: 80vh;
+  min-height: calc(100vh - 152px);
   margin: 0 auto; }
 
 .comment-anchor {
