@@ -1,13 +1,15 @@
 <footer>
   <p class="site-info">
-    Theme - <a href="https://github.com/dongyuanxin/theme-bmw">BMW</a> |
+    Theme - <a href="https://github.com/dongyuanxin/theme-bmw" target="_blank">BMW</a> |
     <% if(theme.footer.more){ %>
       <%- theme.footer.more %>
     <% } %>
+    <br />
+    <a href="http://www.beian.miit.gov.cn" target="_blank">鄂ICP备18028045号</a>
   </p>
 </footer>
 
-<% 
+<%
   let footerStartTimeArr = theme.footer.start.split('-')
   let footerStartTime = {
     year: parseInt(footerStartTimeArr[0], 10),
