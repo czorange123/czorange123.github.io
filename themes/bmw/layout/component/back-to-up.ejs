@@ -10,8 +10,10 @@ const updateIconToTop = percent => {
   dom.innerText = percent;
   if(percent < 1) {
     document.querySelector(".back-to-top").className = "back-to-top hidden";
+    document.querySelector(".header-wrap").className = "header-wrap";
   } else {
     document.querySelector(".back-to-top").className = "back-to-top";
+    document.querySelector(".header-wrap").className = "header-wrap header-scroll-down";
   }
 }
 

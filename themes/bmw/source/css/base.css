@@ -33,9 +33,16 @@ p.site-info {
   top: 0;
   z-index: 900;
   width: 100%;
-  box-shadow: 0 5px 4px -4px rgba(25, 25, 25, 0.1);
+  /*box-shadow: 0 5px 4px -4px rgba(25, 25, 25, 0.1);*/
   color: #888;
-  background: white; }
+  background: white;
+  transition: box-shadow 0.3s;
+}
+
+/*页面滚动在非顶部时导航添加box-shadow*/
+.header-scroll-down {
+  box-shadow: 0 5px 4px -4px rgba(25, 25, 25, 0.1);
+}
 
 .sidebar-active .header-wrap {
   width: calc(100% - 250px); }
