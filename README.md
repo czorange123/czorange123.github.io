@@ -1,8 +1,8 @@
 > 本仓库是本人在学习与工作过程中积累的笔记，将遇到的技术问题进行记录备忘，主要以前端技术为主。
 
 ### 近期计划
- - Hexo theme Oranges
- - 轮播图的几种实现方式
- - 微信小程序踩坑记录
- - 博客目录系统
- - spa google analytics
+ [ ] Hexo theme Oranges
+ [ ] 轮播图的几种实现方式
+ [ ] 微信小程序踩坑记录
+ [ ] 博客目录系统
+ [ ] spa google analytics
