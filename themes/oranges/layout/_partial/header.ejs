@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="oranges, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><% if(is_home()) { %> <%= config.title %> <% } else { %><%= page.title %><% } %></title
 
   <% if (theme.favicon.enable){ %>
@@ -17,7 +18,7 @@
   <% } %>
 
   <!-- css -->
-  <%- css(['/css/base.css', '/icon/iconfont.css', '/css/github-markdown.css', '/css/highlight.css']) %>
+  <%- css(['/css/base.css', '/iconfont/iconfont.css', '/css/github-markdown.css', '/css/highlight.css']) %>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <% if(theme.gtag.enable) { %>

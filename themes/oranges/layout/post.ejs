@@ -26,18 +26,17 @@
 <!-- 朋友页 url形式：https://yoursite/friends/ -->
 <% if (page.type === "friends"){ %>
 <div class="container friend-index">
-  <div class="friend-navigation">
+  <div class="friend-list">
     <% for(let friend of theme.friends){ %>
-    <a href="<%- friend.site %>" target="_blank">
-      <div class="card">
-        <p class="card-header">
-          @ <%- friend.nickname %>
-        </p>
+      <div class="friend-list-item">
+        <span class="nickname">@ <%- friend.nickname %></span>
+        <a href="<%- friend.site %>" target="_blank">
+          <span class="site-path"><%- friend.site %></span>
+        </a>
         <p class="card-meta">
           <%- friend.meta %>
         </p>
       </div>
-    </a>
     <% } %>
   </div>
   <div class="markdown-body">
@@ -66,7 +65,7 @@
     <span class="post-pubtime"><%- page.date.format("YYYY-MM-DD") %></span>
     <span class="post-tags">
       <% if(page.tags && page.tags.length > 0){ %>
-        <i class="iconfont icon-06tags"></i>
+        <i class="iconfont icon-tags"></i>
         <% for(let item of page.tags.data){ %>
         <span class="span--tag">
           <a href="<%= url_for(item.path)%>">
@@ -81,22 +80,6 @@
   <div class="markdown-body">
     <%- page.more %>
   </div>
-  <nav class="post-navigation">
-    <% if(page.next){ %>
-      <div class="nav-pre">
-        <i class="iconfont icon-prev"></i>
-        上一篇:
-        <a href="<%= url_for(page.next.path)%>" target="_self"><%- page.next.title %></a>
-      </div>
-    <% } %>
-    <% if(page.prev){ %>
-      <div class="nav-next">
-        下一篇:
-        <a href="<%= url_for(page.prev.path)%>" target="_self"><%- page.prev.title %></a>
-        <i class="iconfont icon-next"></i>
-      </div>
-    <% } %>
-  </nav>
 
 </div>
 <% } %>
