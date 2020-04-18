@@ -10,16 +10,16 @@ rss:
 # Google Analytics
 gtag:
   enable: false
-  gtagkey: UA-126364107-1
+  gtagkey: 
 
 # gitalk comments
 gitalk:
   enable: false
-  clientID: 57fd80ca85f9d3276439
-  clientSecret: 7411553827815e5766ebe0bce5e4fb2e36e3217f
-  repo: blog
-  owner: zchengsite
-  admin: zchengsite
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
+  admin: 
   distractionFreeMode: false
 
 # 用户头像与昵称
@@ -37,10 +37,10 @@ navbar:
     name: 归档
     enable: true
     path: /archives/
-  -
-    name: 分类
-    enable: true
-    path: /categories/
+  # -
+  #   name: 分类
+  #   enable: true
+  #   path: /categories/
   -
     name: 标签
     enable: true
@@ -64,17 +64,14 @@ friends:
   # site: 地址
   # meta: 描述
   -
-    nickname: Ayu
-    site: https://yuang.site
-    meta:
-  -
     nickname: Lxwu
-    site: https://lxwu.me
+    site: https://lxwu.me/
     meta:
   -
     nickname: Mhyu
-    site: https://mhyu.top
+    site: https://mhyu.top/
     meta:
+
 
 # 页脚信息
 footer:
@@ -87,29 +84,32 @@ footer:
     -
       name: github
       icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    -
-      name: email
-      icon: envelope
-      path: Mailto:ghsau@163.com
-    -
-      name: facebook
-      icon: facebooksquare
-      path:
-    -
-      name: twitter
-      icon: twitter
-      path:
-    -
-      name: 微信
-      icon: wechat
-      path:
-    -
-      name: 微博
-      icon: weibo
-      path:
+      path: https://github.com/zchengsite/
+    # -
+    #   name: email
+    #   icon: envelope
+    #   path: mscsdfsaw***@163.com
+    # -
+    #   name: facebook
+    #   icon: facebooksquare
+    #   path:
+    # -
+    #   name: twitter
+    #   icon: twitter
+    #   path:
+    # -
+    #   name: 微信
+    #   icon: wechat
+    #   path:
+    # -
+    #   name: 微博
+    #   icon: weibo
+    #   path:
 
   more:
     -
-      name: Theme - oranges | Orange's blog
+      name: Copyright © Oranges 2020
       path: https://github.com/zchengsite/hexo-theme-oranges
+    -
+      name: 鄂ICP备18028045号
+      path: http://www.beian.miit.gov.cn
