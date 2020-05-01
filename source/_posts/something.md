@@ -2,7 +2,7 @@
 title: something
 date: 2020-05-01 12:03:39
 tags:
-    - some demes
+    - some demos
 ---
 <link href="/css/something.css" rel="stylesheet"></link>
 

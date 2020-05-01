@@ -37,10 +37,10 @@ navbar:
     name: 归档
     enable: true
     path: /archives/
-  # -
-  #   name: 分类
-  #   enable: true
-  #   path: /categories/
+  -
+    name: 分类
+    enable: true
+    path: /categories/
   -
     name: 标签
     enable: true
@@ -64,14 +64,9 @@ friends:
   # site: 地址
   # meta: 描述
   -
-    nickname: Lxwu
-    site: https://lxwu.me/
+    nickname: Google
+    site: https://www.google.com/
     meta:
-  -
-    nickname: Mhyu
-    site: https://mhyu.top/
-    meta:
-
 
 # 页脚信息
 footer:
@@ -84,32 +79,32 @@ footer:
     -
       name: github
       icon: github
-      path: https://github.com/zchengsite/
-    # -
-    #   name: email
-    #   icon: envelope
-    #   path: Mailto:ghsau@163.com
-    # -
-    #   name: facebook
-    #   icon: facebooksquare
-    #   path:
-    # -
-    #   name: twitter
-    #   icon: twitter
-    #   path:
-    # -
-    #   name: 微信
-    #   icon: wechat
-    #   path:
-    # -
-    #   name: 微博
-    #   icon: weibo
-    #   path:
+      path: https://github.com/zchengsite/hexo-theme-oranges
+    -
+      name: email
+      icon: envelope
+      path: mscsdfsaw***@163.com
+    -
+      name: facebook
+      icon: facebooksquare
+      path:
+    -
+      name: twitter
+      icon: twitter
+      path:
+    -
+      name: 微信
+      icon: wechat
+      path:
+    -
+      name: 微博
+      icon: weibo
+      path:
 
   more:
     -
       name: Copyright © Oranges 2020
       path: https://github.com/zchengsite/hexo-theme-oranges
     -
-      name: 鄂ICP备18028045号
-      path: http://www.beian.miit.gov.cn
+      name: Theme by Oranges | Powered by Hexo
+      path: https://github.com/zchengsite/hexo-theme-oranges

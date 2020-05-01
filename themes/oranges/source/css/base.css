@@ -274,14 +274,14 @@ a:hover {
 }
 
 .post-catalog .toc {
-  padding: 10px 0 0 10px;
+  padding-top: 10px;
 }
 
 .post-catalog .toc-child {
   padding-left: 10px;
 }
 
-.post-catalog ol li {
+.post-catalog li {
   list-style-type: none;
   overflow: hidden;
   white-space: nowrap;
