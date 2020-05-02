@@ -27,7 +27,13 @@ tags:
 <div class="filter-shadow demo-3"></div>
 
 #### 类Windows10毛玻璃效果
-<div class="acrylic-parent demo-1">
+##### 使用css filter(滤镜)结合background-attachment:fixed实现
+<div class="acrylic-filer demo-1">
+  <div class="acrylic">Acrylic</div>
+</div>
+
+##### 使用backdrop-filter实现(兼容性不如上面方式)
+<div class="acrylic-backdrop-filter demo-2">
   <div class="acrylic">Acrylic</div>
 </div>
 
