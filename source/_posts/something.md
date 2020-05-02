@@ -13,5 +13,6 @@ tags:
 光标移动上去查看效果
 <span class="transition-demo demo-1">zcheng.site</span>
 <span class="transition-demo demo-2">zcheng.site</span>
+<span class="transition-demo parent"><span class="transition-demo child">zcheng.site</span></span>
 
 ## to be continue
