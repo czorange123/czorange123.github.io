@@ -121,7 +121,6 @@
 /*animation-demo*/
 /*demo-1*/
   .animation-demo.demo-1 {
-    display: inline-block;
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -141,7 +140,6 @@
 
 /*demo-2*/
   .animation-demo.demo-2 {
-    display: inline-block;
     position: relative;
     width: 1.5em;
     height: 1.5em;

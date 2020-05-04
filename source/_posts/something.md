@@ -1,5 +1,5 @@
 ---
-title: something
+title: Something about CSS
 date: 2020-05-01 12:03:39
 tags:
     - some demos
@@ -8,31 +8,37 @@ tags:
 
 >一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。
 
-## transition
-#### 利用CSS伪元素`::before`&`::after`实现光标悬停动效。
-光标移动上去查看效果
+## CSS `::before`&`::after`
+### transition
+
+- 利用伪元素实现文本选中效果，光标移动上去查看效果
 <span class="transition-demo demo-1">zcheng.site</span>
 <span class="transition-demo demo-2">zcheng.site</span>
 <span class="transition-demo parent"><span class="transition-demo child">zcheng.site</span></span>
 
-## animation
-#### 写一些加载动画
-<div class="animation-demo demo-1"></div><br>
-<div class="animation-demo demo-2"></div><br><br>
+### animation
 
-## css filter
-#### 利用css滤镜模糊效果模拟图片本色阴影
+- 利用`transform`结合伪元素实现加载动画
+<div class="animation-demo demo-1"></div>
+<div class="animation-demo demo-2"></div><br>
+
+## CSS filter
+### 类`box-shadow`阴影效果
+- 利用css滤镜模糊效果实现图片自身色彩阴影效果
+
 <div class="filter-shadow demo-1"></div>
 <div class="filter-shadow demo-2"></div>
 <div class="filter-shadow demo-3"></div>
 
-#### 类Windows10毛玻璃效果
-##### 使用css filter(滤镜)结合background-attachment:fixed实现
+### 类Windows10毛玻璃效果
+- 利用`filter`结合`background-attachment:fixed`实现
+
 <div class="acrylic-filer demo-1">
   <div class="acrylic">Acrylic</div>
 </div>
 
-##### 使用backdrop-filter实现(兼容性不如上面方式)
+- 使用`backdrop-filter`实现(使用起来简单，但目前兼容性较差)
+
 <div class="acrylic-backdrop-filter demo-2">
   <div class="acrylic">Acrylic</div>
 </div>
