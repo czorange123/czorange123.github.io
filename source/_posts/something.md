@@ -37,7 +37,7 @@ tags:
   <div class="acrylic">Acrylic</div>
 </div>
 
-- 使用`backdrop-filter`实现(使用起来简单，但目前兼容性较差)
+- 使用`backdrop-filter`实现(使用起来简单，但目前兼容性较差，[查看](https://www.caniuse.com/#search=backdrop-filter)兼容性)
 
 <div class="acrylic-backdrop-filter demo-2">
   <div class="acrylic">Acrylic</div>
