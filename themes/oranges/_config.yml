@@ -1,33 +1,60 @@
+# 相关配置说明
+  # favicon: 网站图标
+  # avatar: 主题用户头像与昵称
+  # rss: rss订阅
+  # gtag: Google 分析
+  # comments: 文章评论系统
+    # gitalk
+    # disqus
+  # navbar: 主题页面导航栏
+  # catalog: 文章目录
+  # friends: 友链
+  # footer: 页脚信息
 
+# enable: 是否开启相应功能，可选true & false
+
+# 网站图标
 favicon:
   enable: true
   icon: /images/favicon.ico
   touch_icon: /images/favicon.ico
 
-# RSS文件位置
-rss:
-
-# Google Analytics
-gtag:
-  enable: false
-  gtagkey: 
-
-# gitalk comments
-gitalk:
-  enable: false
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
-  admin: 
-  distractionFreeMode: false
-
-# 用户头像与昵称
+# 主题用户头像与昵称
 avatar:
   author_photo: /images/34339465.jpg
   author_nickname: Oranges
 
-# 导航信息
+# rss订阅
+rss:
+  enable: false
+
+# Google 分析
+gtag:
+  enable: false
+  gtagkey:
+
+# 文章评论系统
+comments:
+  enable: true
+  # 目前支持gitalk与disqus评论，选择喜欢的一种开启即可
+  gitalk:
+    enable: false
+    clientID:
+    clientSecret:
+    repo:
+    owner:
+    admin:
+    distractionFreeMode: false
+
+  # disqus 需科学上网方可使用
+  disqus:
+    # https://disqus.com/
+    # 注册账号，获取shortname.disqus.com，shortname为你定义的唯一name
+    # 举个例子：我注册配置完毕后的网址为zcheng.disqus.com，将zcheng填入即可
+    enable: true
+    shortname: zcheng
+
+# 主题页面导航栏
 navbar:
   -
     name: 主页
@@ -37,10 +64,6 @@ navbar:
     name: 归档
     enable: true
     path: /archives/
-  # -
-  #   name: 分类
-  #   enable: true
-  #   path: /categories/
   -
     name: 标签
     enable: true
@@ -58,7 +81,7 @@ navbar:
 catalog:
   enable: true
 
-# 友链详细信息：支持多个友链
+# 友链
 friends:
   # nickname: 昵称
   # site: 地址
@@ -84,34 +107,11 @@ footer:
       name: github
       icon: github
       path: https://github.com/zchengsite/
-    # -
-    #   name: email
-    #   icon: envelope
-    #   path: mscsdfsaw***@163.com
-    # -
-    #   name: facebook
-    #   icon: facebooksquare
-    #   path:
-    # -
-    #   name: twitter
-    #   icon: twitter
-    #   path:
-    # -
-    #   name: 微信
-    #   icon: wechat
-    #   path:
-    # -
-    #   name: 微博
-    #   icon: weibo
-    #   path:
 
   more:
     -
       name: Copyright © Oranges 2020
       path: https://github.com/zchengsite/hexo-theme-oranges
-    # -
-    #   name: Theme by Oranges | Powered by Hexo
-    #   path: https://github.com/zchengsite/hexo-theme-oranges
     -
       name: 鄂ICP备18028045号
       path: http://www.beian.miit.gov.cn

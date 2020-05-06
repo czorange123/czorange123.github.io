@@ -317,6 +317,10 @@ a:hover {
   border-left: 2px solid black;
 }
 
+.comments-container {
+  padding-top: 30px;
+}
+
 .back-to-top {
   position: fixed;
   right: 2.2rem;
