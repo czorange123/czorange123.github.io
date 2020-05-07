@@ -24,13 +24,13 @@ tags:
 
 ## CSS filter
 ### 类`box-shadow`阴影效果
+
 - 利用css滤镜模糊效果实现图片自身色彩阴影效果
 
-<div class="filter-shadow demo-1"></div>
-<div class="filter-shadow demo-2"></div>
-<div class="filter-shadow demo-3"></div>
+<div class="filter-shadow demo-1"></div><div class="filter-shadow demo-2"></div><div class="filter-shadow demo-3"></div>
 
 ### 类Windows10毛玻璃效果
+
 - 利用`filter`结合`background-attachment:fixed`实现
 
 <div class="acrylic-filer demo-1">

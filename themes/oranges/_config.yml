@@ -24,10 +24,6 @@ avatar:
   author_photo: /images/34339465.jpg
   author_nickname: Oranges
 
-# rss订阅
-rss:
-  enable: false
-
 # Google 分析
 gtag:
   enable: false
@@ -107,6 +103,10 @@ footer:
       name: github
       icon: github
       path: https://github.com/zchengsite/
+    -
+      name: rss
+      icon: rss
+      path: atom.xml
 
   more:
     -

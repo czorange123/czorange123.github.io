@@ -85,26 +85,6 @@ deploy:
   # repo: https://github.com/zchengsite/blog.git
   # branch: gh-pages
 
-  #archer =>tags
-  # jsonContent:
-  # meta: false
-  # pages: false
-  # posts:
-  #   title: true
-  #   date: true
-  #   path: true
-  #   text: false
-  #   raw: false
-  #   content: false
-  #   slug: false
-  #   updated: false
-  #   comments: false
-  #   link: false
-  #   permalink: false
-  #   excerpt: false
-  #   categories: true
-  #   tags: true
-
 # hexo-algolia
 # algolia:
 #   applicationID: 'W2YOK1M05Z'
@@ -117,3 +97,18 @@ admin:
   username: oranges
   password_hash: $2a$10$9Ls1XBPIrRI/KIUsQeOrzuG22kzm3p6OcQFPwxmdM4uC6VcWW8Uji
   secret: Secret
+
+# rss订阅
+# hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
