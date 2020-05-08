@@ -25,9 +25,11 @@ avatar:
   author_nickname: Oranges
 
 # Google 分析
+# https://analytics.google.com
+# 获取跟踪 ID
 gtag:
-  enable: false
-  gtagkey:
+  enable: true
+  gtagkey: UA-126364107-1
 
 # 文章评论系统
 comments:
