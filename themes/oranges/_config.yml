@@ -37,19 +37,25 @@ comments:
   # 目前支持gitalk与disqus评论，选择喜欢的一种开启即可
   gitalk:
     enable: false
-    clientID:
-    clientSecret:
-    repo:
-    owner:
-    admin:
+    clientID: 57fd80ca85f9d3276439
+    clientSecret: 7411553827815e5766ebe0bce5e4fb2e36e3217f
+    repo: blog
+    owner: zchengsite
+    admin: zchengsite
+    id: location.pathname
     distractionFreeMode: false
+
+  valine:
+    enable: true
+    appId: j73OlR745tdiYMdFRzbTPDrO-gzGzoHsz
+    appKey: mhyUfuvzMqhq02Fjxk41wc25
 
   # disqus 需科学上网方可使用
   disqus:
     # https://disqus.com/
     # 注册账号，获取shortname.disqus.com，shortname为你定义的唯一name
     # 举个例子：我注册配置完毕后的网址为zcheng.disqus.com，将zcheng填入即可
-    enable: true
+    enable: false
     shortname: zcheng
 
 # 主题页面导航栏
