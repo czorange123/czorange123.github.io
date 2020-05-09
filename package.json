@@ -1,6 +1,9 @@
 {
   "name": "zcheng's blog",
   "version": "2.0.0",
+  "description": "a hexo blog system",
+  "author": "zcheng <1451426471@qq.com>",
+  "license": "MIT",
   "private": true,
   "hexo": {
     "version": "4.2.0"
