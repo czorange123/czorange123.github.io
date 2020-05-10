@@ -2,7 +2,9 @@
 title: Something about CSS
 date: 2020-05-01 12:03:39
 tags:
-    - some demos
+    - CSS
+categories:
+	- Front end
 ---
 <link href="/css/something.css" rel="stylesheet"></link>
 

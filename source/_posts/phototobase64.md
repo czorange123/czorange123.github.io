@@ -2,7 +2,9 @@
 title: js实现图片转换为Base64
 date: 2018-12-12 17:19:52
 tags:
-    - javascript
+    - Javascript
+categories:
+    - Front end
 ---
 Base64是一种基于64个可打印字符来表示二进制数据的表示方法。
 常用于在通常处理文本数据的场合，表示、传输、存储一些二进制数据，包括MIME的电子邮件及XML的一些复杂数据。

@@ -2,9 +2,10 @@
 title: Vue transition 折叠类动画自动获取隐藏层高度以及手风琴效果实现
 date: 2019-07-13 12:37:58
 tags:
-    - css
-    - vue
-    - transition
+    - CSS
+    - VUE
+categories:
+    - Front end
 ---
 
 #### 前面要说的话

@@ -2,9 +2,9 @@
 title: 疫情期间的居家生活
 date: 2020-03-25 14:48:35
 tags:
-	- 生活
+	- Life
 categories:
-	- 生活
+	- Life
 ---
 
 ### 回家

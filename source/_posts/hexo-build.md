@@ -2,8 +2,10 @@
 title: 如何搭建一个简易的个人网站
 date: 2018-04-10 12:46:50
 tags:
-    - hexo
-    - blog
+    - Hexo
+categories:
+	- Hexo
+	- Setup and deployment
 ---
 > 以下全部操作均在Ubuntu 18.04.1 LTS中进行测试。
 

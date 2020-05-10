@@ -2,8 +2,10 @@
 title: ssh key密钥生成与使用
 date: 2018-08-09 12:23:41
 tags:
-    - linux
-    - git
+    - Linux
+    - Git
+categories:
+    - Others
 ---
 
 ### 生成密钥ssh key

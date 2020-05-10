@@ -2,9 +2,9 @@
 title: 三河古镇一日游
 date: 2018-07-06 15:38:22
 tags:
-	- 旅行
+	- Life
 categories:
-	- 生活
+	- Life
 ---
 
 二〇〇八年五月二十号(oﾟvﾟ)ノ
