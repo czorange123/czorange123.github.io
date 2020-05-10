@@ -272,6 +272,83 @@
       background-blend-mode: exclusion;
     }
 
+/*css border*/
+.border-dome {
+  position: relative;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+/*垂直小书签*/
+.border-dome.demo-1 {
+  height: 4.2rem;
+  width: 2.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.border-dome.demo-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 1.4rem solid gray;
+  border-top-width: 0;
+  border-bottom-color: transparent;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/*水平小书签*/
+.border-dome.demo-2 {
+  height: 2.8rem;
+  width: 4.2rem;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.border-dome.demo-2::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 1.4rem solid gray;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-right-top-radius: 3px;
+  border-right-bottom-radius: 3px;
+}
+
+/*水平带小折角书签*/
+.border-dome.demo-3 {
+  height: 2.8rem;
+  width: 12rem;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.border-dome.demo-3::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 1.4rem solid gray;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-right-top-radius: 3px;
+  border-right-bottom-radius: 3px;
+}
+
+.border-dome.demo-3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1.6rem;
+  border: 0.8rem solid #555555;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
 
 /*to-be-continued*/
 .to-be-continued dot {
