@@ -126,6 +126,83 @@ catalog:
   enable: true
 ```
 
+#### 启用`rss`功能
+1.安装`hexo-generator-feed`[官方插件](https://github.com/hexojs/hexo-generator-feed)
+```shell
+npm install hexo-generator-feed --save
+```
+2.在博客项目配置文件`_config.yml`(非主题配置文件)增加:
+```
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+```
+3.开启rss按钮
+在主题配置文件`_config.yml`增加页脚项:
+```
+footer:
+  social:
+    -
+      name: rss
+      icon: rss
+      path: atom.xml
+```
+### 启用评论功能
+1.确保主题配置文件`_config.yml`下`comments`->`enable: true`
+
+2.目前支持以下几种评论插件
+  - valine
+  - gitalk
+  - disqus(需科学上网)
+
+3.如需使用，修改相应评论下`enable: true`
+
+4.查看评论插件官方教程获取相应的字段填入即可使用
+
+以`valine`为例，注册`valine`并获取`appId`&`appKey`填入即可使用
+```
+comments:
+  enable: true
+  valine:
+    # https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key
+    enable: true
+    appId: xxxxxxxx
+    appKey: xxxxxxxxx
+    placeholder: welcome!
+    avatar: retro
+```
+
+### 优化与更新
+主题目前功能并不多，后续根据需求考虑更新迭代。
+- [x] 自定义导航，可灵活配置自己想要的导航✔
+- [x] toc文章目录展示✔
+- [x] Fancybox，支持文章内图片友好浏览✔
+- [x] 回到页面顶部`[2020.5.4]`✔
+- [x] RSS Feed`[2020.5.7]`✔
+- [ ] 文章页末增加next post & Previous Post
+- [x] 文章标题锚点`[2020.5.3]`✔
+- [x] 评论系统`[2020.5.7]`✔
+- [ ] 分享功能
+- [ ] 文章字数统计
+- [ ] 页面访问量统计
+- [x] Google分析`[2020.5.8]`✔
+- [ ] 文章加密
+- [ ] 文章置顶
+- [ ] 全文搜索功能
+- [ ] 主题配色切换
+- [x] 页面平滑滚动`[2020.5.4]`✔
+- [x] 目录激活&跟随`[2020.5.4]`✔
+- [ ] 主题样式可自定义配置
+
 ### 写在最后
 
 如遇问题请提交Issue反馈，看到会第一时间解答
