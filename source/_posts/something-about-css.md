@@ -50,9 +50,12 @@ categories:
 
 ## CSS border
 ### 小书签
-使用`border`结合`::before`& `::after`实现书签效果
+- 使用`border`结合`::before`& `::after`实现书签效果
 <div class="border-dome demo-1">书签</div><br>
 <div class="border-dome demo-2">书签</div><br>
-<div class="border-dome demo-3">我是一个小书签</div>
+<div class="border-dome demo-3">我是一个小书签</div><br>
+
+- 使用`border`结合`::before`& `::after`实现平行四边形效果
+<div class="border-demo demo-4"></div><br>
 
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
