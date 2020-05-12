@@ -4,7 +4,7 @@ date: 2020-05-01 12:03:39
 tags:
     - CSS
 categories:
-	- Front end
+  - Front end
 ---
 <link href="/css/something.css" rel="stylesheet"></link>
 
@@ -55,7 +55,16 @@ categories:
 <div class="border-dome demo-2">书签</div><br>
 <div class="border-dome demo-3">我是一个小书签</div><br>
 
+### 奇形怪状
+
 - 使用`border`结合`::before`& `::after`实现平行四边形效果
 <div class="border-demo demo-4"></div><br>
+
+- 类ZFB APP部分加载动画
+<div class="border-demo">
+  <div class="demo-5"></div>
+  <div class="demo-5"></div>
+  <div class="demo-5"></div>
+</div><br>
 
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
