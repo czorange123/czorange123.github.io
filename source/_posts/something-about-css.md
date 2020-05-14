@@ -60,7 +60,7 @@ categories:
 - 使用`border`结合`::before`& `::after`实现平行四边形效果
 <div class="border-demo demo-4"></div><br>
 
-- 类ZFB APP部分加载动画😁
+- 类支付宝APP加载动画😁
 <div class="border-demo">
   <div class="demo-5-1"></div>
 </div>
@@ -70,5 +70,8 @@ categories:
 <div class="border-demo">
   <div class="demo-5-3"></div>
 </div><br>
+
+- 其实有更简单的实现方式，`transform`倾斜即可😂
+<div class="border-demo demo-6"></div><br>
 
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
