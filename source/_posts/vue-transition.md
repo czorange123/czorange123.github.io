@@ -5,7 +5,7 @@ tags:
     - CSS
     - VUE
 categories:
-    - Front end
+    - 前端
 ---
 
 #### 前面要说的话

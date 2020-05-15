@@ -4,11 +4,11 @@ date: 2020-05-01 12:03:39
 tags:
     - CSS
 categories:
-  - Front end
+  - 前端
 ---
 <link href="/css/something.css" rel="stylesheet"></link>
 
->一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。
+> 一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。
 
 ## CSS `::before`&`::after`
 ### transition
