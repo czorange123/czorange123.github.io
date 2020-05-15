@@ -12,6 +12,8 @@
   - Websocket
 - [CSS3](https://zcheng.site/something-about-css.html)
   - SCSS
+- 浏览器
+  - promise/async/await
 - Node.js
 - 主流前端框架
   - VUE.js
@@ -29,9 +31,10 @@
 ## 最近
 
 ### 博客
- - [ ] 项目中css改造为scss
+ - [ ] SCSS学习与实践 - 将现有项目CSS整合成SCSS
  - [ ] 项目中html下的js提取为单独js文件
  - [ ] 更新something about CSS
+ - [ ] 更新something about HTML
 
 ### 开源项目
  - hexo-theme-oranges持续优化
