@@ -48,14 +48,14 @@
     }
 
   /*demo3*/
-    .parent {
+    .demo-3-parent {
       padding: 2px 0;
     }
-    .child {
+    .demo-3-child {
       padding: 0 2px;
     }
-    .parent::before,
-    .parent::after {
+    .demo-3-parent::before,
+    .demo-3-parent::after {
       content: "";
       position: absolute;
       left: 0;
@@ -66,28 +66,28 @@
       transition: transform 0.3s;
     }
 
-    .parent::before {
+    .demo-3-parent::before {
       top: 0;
       transform-origin: center right;
     }
 
-    .parent::after {
+    .demo-3-parent::after {
       bottom: 0;
       transform-origin: center left;
     }
 
-    .parent:hover::before {
+    .demo-3-parent:hover::before {
       transform-origin: center left;
       transform: scaleX(1);
     }
 
-    .parent:hover::after {
+    .demo-3-parent:hover::after {
       transform-origin: center right;
       transform: scaleX(1);
     }
 
-    .child::before,
-    .child::after {
+    .demo-3-child::before,
+    .demo-3-child::after {
       content: "";
       position: absolute;
       top: 0;
@@ -98,22 +98,22 @@
       transition: transform 0.3s;
     }
 
-    .child::before {
+    .demo-3-child::before {
       left: 0;
       transform-origin: center top;
     }
 
-    .child::after {
+    .demo-3-child::after {
       right: 0;
       transform-origin: center bottom;
     }
 
-    .child:hover::before {
+    .demo-3-child:hover::before {
       transform-origin: center bottom;
       transform: scaleY(1);
     }
 
-    .child:hover::after {
+    .demo-3-child:hover::after {
       transform-origin: center top;
       transform: scaleY(1);
     }

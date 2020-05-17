@@ -16,7 +16,7 @@ categories:
 - 利用伪元素实现文本选中效果，光标移动上去查看效果
 <span class="transition-demo demo-1">zcheng.site</span>
 <span class="transition-demo demo-2">zcheng.site</span>
-<span class="transition-demo parent"><span class="transition-demo child">zcheng.site</span></span>
+<span class="transition-demo demo-3-parent"><span class="transition-demo demo-3-child">zcheng.site</span></span>
 
 ### animation
 
@@ -51,9 +51,9 @@ categories:
 ## CSS border
 ### 小书签
 - 使用`border`结合`::before`& `::after`实现书签效果
-<div class="border-dome demo-1">书签</div><br>
-<div class="border-dome demo-2">书签</div><br>
-<div class="border-dome demo-3">我是一个小书签</div><br>
+<div class="border-demo demo-1">书签</div><br>
+<div class="border-demo demo-2">书签</div><br>
+<div class="border-demo demo-3">我是一个小书签</div><br>
 
 ### 奇形怪状
 
