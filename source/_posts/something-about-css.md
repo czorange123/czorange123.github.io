@@ -6,7 +6,7 @@ tags:
 categories:
   - 前端
 ---
-<link href="/css/something.css" rel="stylesheet"></link>
+<link href="/scss/something.css" rel="stylesheet"></link>
 
 > 一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。
 

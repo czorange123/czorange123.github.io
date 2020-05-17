@@ -1,0 +1,20 @@
+/*transition-demo*/
+.transition-demo {
+  position: relative;
+  cursor: pointer;
+  color: #24292e;
+  transition: all 0.1s;
+
+  &.demo-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+    height: 2px;
+    background: linear-gradient(to right, #24292e, #666);
+    transform: scaleX(0);
+    transform-origin: center right;
+  }
+}

@@ -112,3 +112,9 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
+# scss syntax
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
