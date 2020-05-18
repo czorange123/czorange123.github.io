@@ -490,9 +490,9 @@
         content: "";
         z-index: 10;
         position: absolute;
-        border-top-right-radius: 3px;
-        border-bottom-left-radius: 3px;
         border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
         animation: border-button-top-right 1s infinite ease-in-out both;
       }
       &::after {
@@ -501,7 +501,7 @@
         position: absolute;
         border-top-right-radius: 3px;
         border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
         animation: border-button-bottom-right 1s infinite ease-in-out both;
       }
     }

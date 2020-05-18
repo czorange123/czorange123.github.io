@@ -74,7 +74,7 @@ categories:
 - 其实有更简单的实现方式，`transform`倾斜即可😂
 <div class="border-demo demo-6"></div><br>
 
-- 按钮边角
+- 按钮边角动画
 <div class="border-button-demo demo-1">
   <button type="button">看看我</button>
 </div>
