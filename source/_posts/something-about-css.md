@@ -74,4 +74,9 @@ categories:
 - 其实有更简单的实现方式，`transform`倾斜即可😂
 <div class="border-demo demo-6"></div><br>
 
+- 按钮边角
+<div class="border-button-demo demo-1">
+  <button type="button">看看我</button>
+</div>
+
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
