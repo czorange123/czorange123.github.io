@@ -160,9 +160,9 @@ footer:
 1.确保主题配置文件`_config.yml`下`comments`->`enable: true`
 
 2.目前支持以下几种评论插件
-  - valine
-  - gitalk
-  - disqus(需科学上网)
+  - [valine](https://valine.js.org/quickstart.html)
+  - [gitalk](https://github.com/gitalk/gitalk#usage)
+  - [disqus](https://disqus.com)(需科学上网)
 
 3.如需使用，修改相应评论下`enable: true`
 
@@ -188,7 +188,7 @@ comments:
 - [x] Fancybox，支持文章内图片友好浏览✔
 - [x] 回到页面顶部`[2020.5.4]`✔
 - [x] RSS Feed`[2020.5.7]`✔
-- [ ] 文章页末增加next post & Previous Post
+- [x] 文章页末增加NEXT & PREV`[2020.5.10]`✔
 - [x] 文章标题锚点`[2020.5.3]`✔
 - [x] 评论系统`[2020.5.7]`✔
 - [ ] 分享功能
