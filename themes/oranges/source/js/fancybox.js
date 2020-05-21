@@ -1,4 +1,4 @@
-
+// fancybox js
 let fancyTimer = setInterval(function(){
   if(!window.$){
     return;
