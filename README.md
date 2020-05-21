@@ -32,7 +32,7 @@
 
 ### 博客
  - [ ] SCSS学习与实践 - 将现有项目CSS整合成SCSS
- - [ ] 项目中html下的js提取为单独js文件
+ - [x] 项目中html下的js提取为单独js文件
  - [ ] 更新something about CSS
  - [ ] 更新something about HTML
 
