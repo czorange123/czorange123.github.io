@@ -62,7 +62,7 @@
     padding: 2px 0;
 
     &::before, &::after {
-      @include demo-3(scaleX(0))
+      @include demo-3(scaleX(0));
       left: 0;
       right: 0;
       height: 2px;
@@ -92,7 +92,7 @@
     padding: 0 2px;
 
     &::before, &::after {
-      @include demo-3(scaleY(0))
+      @include demo-3(scaleY(0));
       top: 0;
       bottom: 0;
       width: 2px;
@@ -510,15 +510,18 @@
       padding: 1.2rem 2rem;
       line-height: 1;
       background: #fff;
-      border: 1px solid #dcdfe6;
+      border-width: 0;
+      background: #eee;
       color: #606266;
       text-align: center;
       cursor: pointer;
       border-radius: 4px;
+      outline: none;
       &:hover {
         color: #409eff;
         border-color: transparent;
         background-color: #ecf5ff;
+        border-width: 0;
         &::before {
           content: "";
           z-index: 10;
@@ -539,64 +542,64 @@
         }
         @keyframes border-button-top-left {
           0%, 100% {
-            left: -.8rem;
-            top: -.8rem;
-            border: .6rem solid rgb(160, 207, 255);
+            left: -.3rem;
+            top: -.3rem;
+            border: .6rem solid #409eff;;
             border-right-color: transparent;
             border-bottom-color: transparent;
           }
           50% {
             left: -.5rem;
             top: -.5rem;
-            border: .6rem solid #409eff;
+            border: .6rem solid rgb(160, 207, 255);
             border-right-color: transparent;
             border-bottom-color: transparent;
           }
         }
         @keyframes border-button-bottom-left {
           0%, 100% {
-            left: -.8rem;
-            bottom: -.8rem;
-            border: .6rem solid rgb(160, 207, 255);
+            left: -.3rem;
+            bottom: -.3rem;
+            border: .6rem solid #409eff;
             border-right-color: transparent;
             border-top-color: transparent;
           }
           50% {
             left: -.5rem;
             bottom: -.5rem;
-            border: .6rem solid #409eff;
+            border: .6rem solid rgb(160, 207, 255);
             border-right-color: transparent;
             border-top-color: transparent;
           }
         }
         @keyframes border-button-top-right {
           0%, 100% {
-            right: -.8rem;
-            top: -.8rem;
-            border: .6rem solid rgb(160, 207, 255);
+            right: -.3rem;
+            top: -.3rem;
+            border: .6rem solid #409eff;
             border-left-color: transparent;
             border-bottom-color: transparent;
           }
           50% {
             right: -.5rem;
             top: -.5rem;
-            border: .6rem solid #409eff;
+            border: .6rem solid rgb(160, 207, 255);
             border-left-color: transparent;
             border-bottom-color: transparent;
           }
         }
         @keyframes border-button-bottom-right {
           0%, 100% {
-            right: -.8rem;
-            bottom: -.8rem;
-            border: .6rem solid rgb(160, 207, 255);
+            right: -.3rem;
+            bottom: -.3rem;
+            border: .6rem solid #409eff;
             border-left-color: transparent;
             border-top-color: transparent;
           }
           50% {
             right: -.5rem;
             bottom: -.5rem;
-            border: .6rem solid #409eff;
+            border: .6rem solid rgb(160, 207, 255);
             border-left-color: transparent;
             border-top-color: transparent;
           }
