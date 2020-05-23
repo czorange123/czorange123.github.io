@@ -2,7 +2,7 @@
 title: 技术分享之机器学习
 date: 2019-10-25 18:01:28
 tags:
-    - 机器学习
+  - 机器学习
 ---
 ![](/images/machine-learning/machine-learning1.png)
 ![](/images/machine-learning/machine-learning2.png)

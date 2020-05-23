@@ -2,6 +2,9 @@
 title: SCSS语法学习与实践 - 将现有项目CSS整合成SCSS
 date: 2020-05-16 09:44:48
 tags:
+  - SCSS
+categories:
+  - 前端
 ---
 
 [Scss](https://sass.bootcss.com/documentation/syntax)是[Sass](https://sass-lang.com/)的一种新语法。相较于传统的Css3，其引入了变量、函数、继承等一些新的概念，帮助我们更方便的书写Css。今天正好系统性学习下Scss，把博客Css代码整合成Scss，也算实践练手了。😋

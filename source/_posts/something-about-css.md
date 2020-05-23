@@ -2,7 +2,7 @@
 title: Something about CSS
 date: 2020-05-01 12:03:39
 tags:
-    - CSS
+  - CSS
 categories:
   - 前端
 ---

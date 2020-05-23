@@ -2,10 +2,10 @@
 title: hexo一键部署到云服务器
 date: 2018-05-01 11:44:37
 tags:
-	- Hexo
+  - Hexo
 categories:
-	- Hexo
-	- Setup and deployment
+  - Hexo
+  - Setup and deployment
 ---
 上一篇记录了[如何搭建一个简易的个人网站](hexo-build.html)，采用`hexo`，`github pages`进行搭建与部署。
 本篇主要记录下如何将hexo博客部署到非`github pages`的第三方云服务器上，并实现一键部署。

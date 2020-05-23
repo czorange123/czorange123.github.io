@@ -2,10 +2,10 @@
 title: Windows10子系统Ubuntu体验
 date: 2018-06-21 10:03:20
 tags:
-    - WSL
-    - Linux
+  - WSL
+  - Linux
 categories:
-    - Tools
+  - Tools
 ---
 Windows10更新到1709（或者更早）版本后，Windows10系统自带了一个linux子系统模块，如果你想换个环境写代码，体验体验Winodws10的子系统，就可以接着往下看
 
