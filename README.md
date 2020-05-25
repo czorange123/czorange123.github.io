@@ -31,7 +31,7 @@
 ## 最近
 
 ### 博客
- - [ ] SCSS学习与实践 - 将现有项目CSS整合成SCSS
+ - [x] SCSS学习与实践 - 将现有项目CSS整合成SCSS
  - [x] 项目中html下的js提取为单独js文件
  - [ ] 更新something about CSS
  - [ ] 更新something about HTML
@@ -39,6 +39,7 @@
 ### 开源项目
  - hexo-theme-oranges持续优化
  - nuxt-admin更新优化
+ - hexo-theme-slime设计与实现
 
 ### 算法
  - 每日一题
