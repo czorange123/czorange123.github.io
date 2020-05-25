@@ -479,6 +479,158 @@
       }
     }
   }
+  &.demo-7 {
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    width: 0;
+    border: solid #eee;
+    border-top-width: 2rem;
+    border-bottom-width: 2rem;
+    border-left-width: 1.5rem;
+    border-right-width: 1.5rem;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transform-origin: center;
+    animation: border-demo-7 3.2s infinite ease-out;
+
+    &::before {
+      position: absolute;
+      top: -2rem;
+      left: -1.5rem;
+      content: "";
+      width: 0;
+      height: 0;
+      border: solid gray;
+      border-top-width: 2rem;
+      border-bottom-width: 2rem;
+      border-left-width: 1.5rem;
+      border-right-width: 1.5rem;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      transform-origin: right center;
+      animation: demo-7-before 3.2s infinite ease-out;
+
+      @keyframes demo-7-before {
+        0% {
+          border: solid transparent;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-bottom-color: transparent;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+        50% {
+          border: solid gray;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-bottom-color: transparent;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+        100% {
+          border: solid transparent;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-bottom-color: transparent;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -2rem;
+      right: -1.5rem;
+      content: "";
+      width: 0;
+      height: 0;
+      border:solid gray;
+      border-top-width: 2rem;
+      border-bottom-width: 2rem;
+      border-left-width: 1.5rem;
+      border-right-width: 1.5rem;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      animation: demo-7-after 3.2s infinite ease-out;
+
+      @keyframes demo-7-after {
+        0% {
+          border: solid gray;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: transparent;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+        50% {
+          border: solid transparent;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: transparent;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+        100% {
+          border: solid gray;
+          border-top-width: 2rem;
+          border-bottom-width: 2rem;
+          border-left-width: 1.5rem;
+          border-right-width: 1.5rem;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: transparent;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+
+    @keyframes border-demo-7 {
+      0% {
+        transform: rotate(0deg);
+      }
+      45% {
+        transform: rotate(181deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      95% {
+        transform: rotate(361deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
 
 .border-button-demo {
