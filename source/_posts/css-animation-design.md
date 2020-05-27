@@ -47,5 +47,5 @@ categories:
   <button type="button">看看我</button>
 </div>
 
-- 漏斗？😲
+- 类沙漏
 <div class="border-demo demo-7"></div>
