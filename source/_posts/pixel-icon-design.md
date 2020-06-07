@@ -1,5 +1,5 @@
 ---
-title: Pixel icon design
+title: 像素图标设计（updating⏳）
 date: 2020-06-03 21:26:51
 tags:
 - CSS
@@ -19,3 +19,5 @@ categories:
 ## orange
 
 <i class="pixel-orange"></i>
+
+<h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
