@@ -1,0 +1,22 @@
+.rotate-demo {
+  &.demo-1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    // background-color: gray;
+    box-shadow: 0 -21px 0 0 #a3afb7, 14px -14px 0 0 #a3afb7, 21px 0 0 0 #a3afb7, 14px 14px 0 0 #a3afb7, 0 21px 0 0 #a3afb7, -14px 14px 0 0 #a3afb7, -21px 0 0 0 #a3afb7, -14px -14px 0 0 #a3afb7;
+    animation: rotate-demo-1 1.5s infinite ease;
+  }
+  @keyframes rotate-demo-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(275deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+}

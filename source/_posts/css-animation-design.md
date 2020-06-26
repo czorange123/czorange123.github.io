@@ -9,6 +9,7 @@ categories:
 ---
 
 <link href="/scss/something-about-css.css" rel="stylesheet"></link>
+<link href="/scss/css-animation-design/base.css" rel="stylesheet"></link>
 
 > 一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。
 
@@ -20,7 +21,7 @@ categories:
   <span class="transition-demo demo-2">zcheng.site</span>
   <span class="transition-demo demo-3-parent"><span class="transition-demo demo-3-child">zcheng.site</span></span>
 
-### 一些简单的加载动画
+### 简单的加载动画
 
 - 利用`transform`结合伪元素实现加载动画
 
@@ -43,7 +44,11 @@ categories:
 
   <div class="border-demo demo-6"></div><br>
 
-### 一些按钮效果
+- 旋转效果
+  
+  <div class="rotate-demo demo-1"></div><br>
+
+### 按钮效果
 
 - 按钮边角动画
 
