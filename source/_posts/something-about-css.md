@@ -48,4 +48,13 @@ categories:
 
   <div class="border-demo demo-4"></div><br>
 
+### 阳光阴影效果 (test)
+
+  <div class="shadow-demo demo-1">
+    <div class="shadow-demo-item ellipse-600"></div>
+    <div class="shadow-demo-item ellipse-700"></div>
+    <div class="shadow-demo-item ellipse-800"></div>
+    <div class="shadow-demo-item ellipse-900"></div>
+  </div>
+
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
