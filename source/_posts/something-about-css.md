@@ -51,6 +51,10 @@ categories:
 ### 阳光阴影效果 (test)
 
   <div class="shadow-demo demo-1">
+    <div class="card-1">
+      <div class="card-title">Oranges</div>
+      <div class="card-footer">zcheng.site</div>
+    </div>
     <div class="shadow-demo-item ellipse-600"></div>
     <div class="shadow-demo-item ellipse-700"></div>
     <div class="shadow-demo-item ellipse-800"></div>
