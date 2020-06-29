@@ -670,6 +670,7 @@
     background-color: #484848;
     border-radius: 10px;
     z-index: 9;
+    overflow: hidden;
     .card-1 {
       position: absolute;
       top: 50%;
@@ -699,58 +700,62 @@
     .shadow-demo-item {
       &.ellipse-600 {
         position: absolute;
-        top: 8rem;
+        top: -2rem;
         left: 8rem;
-        width: 3.5rem;
-        height: 10rem;
+        width: 4rem;
+        height: 100%;
         background-color: #f5f3f4;
         z-index: 10;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 40%;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 15%;
-        transform: rotate(-35deg);
-        filter: blur(5px);
+        // border-top-left-radius: 50%;
+        // border-top-right-radius: 40%;
+        // border-bottom-left-radius: 50%;
+        // border-bottom-right-radius: 15%;
+        transform: rotate(25deg);
+        transform-origin: top;
+        filter: blur(6px);
+        opacity: 0.8;
       }
       &.ellipse-700 {
         position: absolute;
-        top: 0;
-        left: 50%;
-        width: 2rem;
+        top: -2rem;
+        left: 30%;
+        width: 5rem;
         height: 125%;
         background-color: #f5f3f4;
         z-index: 10;
-        border-radius: 50%;
-        transform: rotate(-35deg);
+        // border-radius: 50%;
+        transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
+        opacity: 0.8;
       }
       &.ellipse-800 {
         position: absolute;
-        top: 28%;
-        left: 45%;
-        width: 2rem;
-        height: 70%;
+        top: -2rem;
+        left: 60%;
+        width: 2.5rem;
+        height: 125%;
         background-color: #f5f3f4;
         z-index: 10;
-        border-radius: 50%;
-        transform: rotate(-35deg);
+        // border-radius: 50%;
+        transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
         opacity: 0.8;
       }
       &.ellipse-900 {
         position: absolute;
-        top: 10%;
+        top: -2rem;
         left: 45%;
         width: 2rem;
-        height: 20%;
+        height: 125%;
         background-color: #f5f3f4;
         z-index: 10;
-        border-radius: 50%;
-        transform: rotate(-35deg);
+        // border-radius: 50%;
+        transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
+        opacity: 0.8;
       }
     }
   }
