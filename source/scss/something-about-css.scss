@@ -667,7 +667,8 @@
     position: relative;
     width: 100%;
     height: 50rem;
-    background-color: #484848;
+    // background-color: #484848;
+    background-image: url("/images/something-about-css/panel-bg.png");
     border-radius: 10px;
     z-index: 9;
     overflow: hidden;
@@ -713,7 +714,7 @@
         transform: rotate(25deg);
         transform-origin: top;
         filter: blur(6px);
-        opacity: 0.8;
+        opacity: 0.6;
       }
       &.ellipse-700 {
         position: absolute;
@@ -727,7 +728,7 @@
         transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
-        opacity: 0.8;
+        opacity: 0.6;
       }
       &.ellipse-800 {
         position: absolute;
@@ -741,7 +742,7 @@
         transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
-        opacity: 0.8;
+        opacity: 0.6;
       }
       &.ellipse-900 {
         position: absolute;
@@ -755,7 +756,7 @@
         transform: rotate(25deg);
         transform-origin: top;
         filter: blur(5px);
-        opacity: 0.8;
+        opacity: 0.6;
       }
     }
   }
