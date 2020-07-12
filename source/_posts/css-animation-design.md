@@ -45,7 +45,7 @@ categories:
   <div class="border-demo demo-6"></div><br>
 
 - 旋转效果
-  
+
   <div class="rotate-demo demo-1"></div><br>
 
 ### 按钮效果
@@ -61,5 +61,9 @@ categories:
 - 沙漏
 
   <div class="border-demo demo-7"></div>
+
+### 跳跳跳
+ - 左右横跳
+  <div class="jump-demo demo-1"></div>
 
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
