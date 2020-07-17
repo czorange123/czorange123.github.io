@@ -36,7 +36,7 @@
       border-radius: 5px;
       background-color: gray;
       transform-origin: center center;
-      animation: jump-demo-1 2.5s infinite ease;
+      animation: jump-demo-1 1.2s infinite ease-in-out alternate;
     }
     &::after {
       content: "";
@@ -47,56 +47,34 @@
       height: 3rem;
       border-radius: 5px;
       background-color: gray;
-      animation: jump-demo-2 2.5s infinite linear, jump-demo-2-2 2.5s infinite ease;
+      transform-origin: -60% center;
+      animation: jump-demo-2 1.2s infinite linear alternate, jump-demo-2-2 1.2s infinite ease;
     }
     @keyframes jump-demo-1 {
-      0%, 100% {
+      from {
         transform: translateX(0);
       }
-      50% {
+      to {
         transform: translateX(7rem);
       }
     }
     @keyframes jump-demo-2 {
-      0% {
+      0%, 20% {
         transform: rotate(0);
-        transform-origin: -2rem 1rem;
-      }
-      30%, 50% {
-        transform: rotate(-180deg);
-        transform-origin: -2rem 1.5rem;
       }
       80%, 100% {
-        transform: rotate(0);
-        transform-origin: -2rem 1rem;
+        transform: rotate(-180deg);
       }
     }
     @keyframes jump-demo-2-2 {
-      0%, 30% {
+      0%, 80% {
         width: 3rem;
         height: 3rem;
       }
-      32%, 34% {
-        width: 4rem;
-        height: 2rem;
-      }
-      45%, 47% {
-        width: 3rem;
-        height: 3rem;
-      }
-
-      50%, 80% {
-        width: 3rem;
-        height: 3rem;
-      }
-      82%, 84% {
-        width: 4rem;
-        height: 2rem;
-      }
-      95%, 97% {
-        width: 3rem;
-        height: 3rem;
-      }
+       82%, 86% {
+        width: 3.5rem;
+        height: 2.5rem;
+       }
     }
   }
 }
