@@ -20,3 +20,61 @@
     }
   }
 }
+
+
+.jump-demo {
+  &.demo-1 {
+    position: relative;
+    height: 8rem;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 3rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 5px;
+      background-color: gray;
+      transform-origin: center center;
+      animation: jump-demo-1 1.2s infinite ease-in-out alternate;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 10rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 5px;
+      background-color: gray;
+      transform-origin: -60% center;
+      animation: jump-demo-2 1.2s infinite linear alternate, jump-demo-2-2 1.2s infinite ease;
+    }
+    @keyframes jump-demo-1 {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(7rem);
+      }
+    }
+    @keyframes jump-demo-2 {
+      0%, 20% {
+        transform: rotate(0);
+      }
+      80%, 100% {
+        transform: rotate(-180deg);
+      }
+    }
+    @keyframes jump-demo-2-2 {
+      0%, 80% {
+        width: 3rem;
+        height: 3rem;
+      }
+       82%, 86% {
+        width: 3.5rem;
+        height: 2.5rem;
+       }
+    }
+  }
+}
