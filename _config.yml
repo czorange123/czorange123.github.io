@@ -118,3 +118,9 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: /images/another/image-loading.svg
+  isSPA: false # optional
