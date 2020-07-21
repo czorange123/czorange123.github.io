@@ -26,6 +26,8 @@
   &.demo-1 {
     position: relative;
     height: 8rem;
+    width: 16rem;
+    border-bottom: 2px solid gray;
     &::before {
       content: "";
       position: absolute;
@@ -75,6 +77,43 @@
         width: 3.5rem;
         height: 2.5rem;
        }
+    }
+  }
+  &.demo-2 {
+    position: relative;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: gray;
+    margin: 10rem 1rem 0 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 3.5rem;
+      bottom: 0;
+      // transform: translate(-50%);
+      width: 3rem;
+      height: 3rem;
+      background-color: gray;
+      border-radius: 5px;
+      transform-origin: center;
+      animation: jump-demo-top-bottom 1.2s infinite ease-in-out;
+    }
+    @keyframes jump-demo-top-bottom {
+      0% {
+        transform: rotate(0);
+        bottom: -0.5rem;
+      }
+      25%, 70% {
+        // transform: rotate(-180deg);
+        bottom: 4.5rem;
+      }
+      70%, 75% {
+        bottom: 5rem;
+      }
+      100% {
+        transform: rotate(-90deg);
+        bottom: -0.5rem;
+      }
     }
   }
 }
