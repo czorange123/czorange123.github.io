@@ -49,7 +49,7 @@
       height: 3rem;
       border-radius: 5px;
       background-color: gray;
-      transform-origin: -60% center;
+      transform-origin: -80% center;
       animation: jump-demo-2 1.2s infinite linear alternate, jump-demo-2-2 1.2s infinite ease;
     }
     @keyframes jump-demo-1 {
@@ -82,52 +82,87 @@
   &.demo-2 {
     position: relative;
     width: 10rem;
-    height: 0.2rem;
+    height: 0.3rem;
+    margin: 10rem 0 0 0;
     background-color: gray;
-    margin: 10rem 1rem 0 1rem;
+    animation: jump-demo-rubberBand 0.8s infinite ease;
     &::before {
       content: "";
       position: absolute;
       left: 3.5rem;
       bottom: 0;
-      // transform: translate(-50%);
       width: 3rem;
       height: 3rem;
       background-color: gray;
       border-radius: 5px;
       transform-origin: center;
-      animation: jump-demo-top-bottom 0.8s infinite ease-in-out, jump-demo-rotate 1.5s infinite linear;
+      animation: jump-demo-top-bottom 0.8s infinite linear, jump-demo-rotate 1.5s infinite linear;
+    }
+    @keyframes jump-demo-rubberBand {
+      0%, 40% {
+        transform: scale3d(1,1,1);
+      }
+      50% {
+        transform: scale3d(1.25,.75,1);
+      }
+      60%, 100% {
+        transform: scale3d(1,1,1);
+      }
     }
     @keyframes jump-demo-top-bottom {
       0% {
         bottom: 5rem;
       }
-      5% {
+      3% {
+        bottom: 4.9rem;
+      }
+      6% {
         bottom: 4.8rem;
       }
-      10% {
+      9% {
+        bottom: 4.7rem;
+      }
+      12% {
         bottom: 4.6rem;
       }
       15% {
+        bottom: 4.5rem;
+      }
+      18% {
         bottom: 4.4rem;
       }
-      20% {
+      21% {
+        bottom: 4.3rem;
+      }
+      24% {
         bottom: 4.2rem;
       }
       50% {
-        bottom: -1rem;
+        bottom: 0.3rem;
       }
-      80% {
+      76% {
         bottom: 4.2rem;
       }
-      85% {
+      79% {
+        bottom: 4.3rem;
+      }
+      82% {
         bottom: 4.4rem;
       }
-      90% {
+      85% {
+        bottom: 4.5rem;
+      }
+      88% {
         bottom: 4.6rem;
       }
-      95% {
+      91% {
+        bottom: 4.7rem;
+      }
+      94% {
         bottom: 4.8rem;
+      }
+      97% {
+        bottom: 4.9rem;
       }
       100% {
         bottom: 5rem;
@@ -137,11 +172,8 @@
       0% {
         transform: rotate(0);
       }
-      // 50% {
-      //   transform: rotate(180deg);
-      // }
       100% {
-        transform: rotate(180deg);
+        transform: rotate(270deg);
       }
     }
   }
