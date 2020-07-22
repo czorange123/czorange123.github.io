@@ -67,6 +67,6 @@ categories:
   <div class="jump-demo demo-1"></div>
 
 - 上下弹跳
-  <div class="jump-demo demo-2"></div> 
+  <div class="jump-demo demo-2"></div>
 
 <h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
