@@ -55,9 +55,9 @@ categories:
       <div class="card-title">Oranges</div>
       <div class="card-footer">zcheng.site</div>
     </div>
-    <div class="shadow-demo-item ellipse-600"></div>
-    <div class="shadow-demo-item ellipse-700"></div>
-    <div class="shadow-demo-item ellipse-800"></div>
+    <!-- <div class="shadow-demo-item ellipse-600"></div> -->
+    <!-- <div class="shadow-demo-item ellipse-700"></div>
+    <div class="shadow-demo-item ellipse-800"></div> -->
     <div class="shadow-demo-item ellipse-900"></div>
   </div>
 
