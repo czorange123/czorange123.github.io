@@ -1,5 +1,5 @@
 ---
-title: Something about CSS（updating⏳）
+title: Something about CSS（持续更新⏳）
 date: 2020-05-01 12:03:39
 tags:
   - CSS
@@ -13,9 +13,54 @@ categories:
 ## CSS filter
 ### 类`box-shadow`阴影效果
 
-- 利用css滤镜模糊效果实现图片自身色彩阴影效果
+- 利用css滤镜模糊效果实现图片**自身色彩**阴影效果
 
   <div class="filter-shadow demo-1"></div><div class="filter-shadow demo-2"></div><div class="filter-shadow demo-3"></div>
+
+<details>
+  <summary>显示代码</summary>
+
+  ```html HTML
+  <div class="filter-shadow demo-1"></div>
+  <div class="filter-shadow demo-2"></div>
+  <div class="filter-shadow demo-3"></div>
+  ```
+  ```scss SCSS
+  .filter-shadow {
+    margin: 0 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      z-index: -1;
+      background: inherit;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      filter: blur(10px) brightness(80%) opacity(.8);
+      transform: scale(.95);
+    }
+    &.demo-1 {
+      background-image: url("/images/something/css-filter-test1.png");
+    }
+    &.demo-2 {
+      background-image: url("/images/something/css-filter-test2.png");
+    }
+    &.demo-3 {
+      background-image: url("/images/something/css-filter-test3.png");
+    }
+  }
+  ```
+</details>
 
 ### 类Windows10毛玻璃效果
 

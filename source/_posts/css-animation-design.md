@@ -1,5 +1,5 @@
 ---
-title: 简易CSS动画设计（updating⏳）
+title: 简易CSS动画设计（持续更新⏳）
 date: 2020-05-26 20:44:52
 tags:
 - CSS
