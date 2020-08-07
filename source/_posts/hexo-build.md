@@ -17,37 +17,37 @@ categories:
 
 #### 安装node.js
 
-```shell
+```bash
 $ node -v
 ```
 
 如果提示命令没找到，按照下面进行安装，否者跳过这一步。
 我这里安装的是12.x版本，安装其他版本参见[链接](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
 
-```shell
+```bash
 $ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
 #### 安装hexo
 
-```shell
+```bash
 $ hexo -v
 ```
 如果提示命令没找到，按照下面进行安装，否者跳过这一步。
 
-```shell
+```bash
 $ npm install -g hexo-cli
 ```
 #### 安装git
 
-```shell
+```bash
 $ git --version
 ```
 
 如果提示命令没找到，按照下面进行安装，否者跳过这一步。
 
-```shell
+```bash
 $ sudo apt-get install git
 ```
 
@@ -73,7 +73,7 @@ $ sudo apt-get install git
 
 ![](/images/hexo-build/clone_repository.png)
 
-```shell
+```bash
 # 拉取username.github.io.git到本地
 $ git clone https://github.com/czorange123/username.github.io.git
 # 等待克隆完毕后
@@ -100,7 +100,7 @@ $ hexo server
 
 为了能使用github提供的github pages，我们需要将项目提交到github
 
-```shell
+```bash
 # 在blog目录下
 $ git status
 $ git add .
@@ -123,7 +123,7 @@ $ git push
 ![](/images/hexo-build/deploy_gh-pages.png)
 
 3. 然后开始部署
-```shell
+```bash
 # 在blog目录下
 # 先安装部署用的包
 $ npm install hexo-deployer-git --save
