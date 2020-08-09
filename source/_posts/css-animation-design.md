@@ -342,6 +342,36 @@ categories:
       }
     }
     ```
+  </details><br>
+
+  <div class="rotate-demo demo-2"></div><br>
+
+  <details>
+    <summary>显示代码</summary>
+
+    ```html HTML
+    <div class="rotate-demo demo-2"></div>
+    ```
+
+    ```scss SCSS
+    &.demo-2 {
+      display: inline-block;
+      height: 4.5rem;
+      width: 4.5rem;
+      border: 4px solid gray;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      animation: rotate-demo-2 1s infinite linear;
+    }
+    @keyframes rotate-demo-2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    ```
   </details>
 
 ### 按钮效果
