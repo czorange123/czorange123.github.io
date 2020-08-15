@@ -49,13 +49,13 @@ categories:
         transform: scale(.95);
       }
       &.demo-1 {
-        background-image: url("/images/something/css-filter-test1.png");
+        background-image: url("https://qiniu.zcheng.site/something-about-css-css-filter-test1.png");
       }
       &.demo-2 {
-        background-image: url("/images/something/css-filter-test2.png");
+        background-image: url("https://qiniu.zcheng.site/something-about-css-css-filter-test2.png");
       }
       &.demo-3 {
-        background-image: url("/images/something/css-filter-test3.png");
+        background-image: url("https://qiniu.zcheng.site/something-about-css-css-filter-test3.png");
       }
     }
     ```
@@ -80,7 +80,7 @@ categories:
     @mixin acrylic {
       height: 300px;
       width: 100%;
-      background: url("/images/something/acrylic.png") no-repeat center/contain;
+      background: url("https://qiniu.zcheng.site/something-about-css-acrylic.png") no-repeat center/contain;
       background-attachment: fixed;
       display: flex;
       justify-content: center;
@@ -105,7 +105,7 @@ categories:
           width: calc(100% + 20px);
           height: calc(100% + 20px);
           z-index: -1;
-          background: url("/images/something/acrylic.png") no-repeat center/contain;
+          background: url("https://qiniu.zcheng.site/something-about-css-acrylic.png") no-repeat center/contain;
           background-attachment: fixed;
         }
         &::after {
@@ -344,13 +344,14 @@ categories:
       <div class="shadow-demo-item ellipse-900"></div>
     </div>
     ```
+
     ```scss SCSS
     .shadow-demo {
       &.demo-1 {
         position: relative;
         width: 100%;
         height: 50rem;
-        background-image: url("/images/something-about-css/panel-bg.png");
+        background-image: url("https://qiniu.zcheng.site/something-about-css-panel-bg.png");
         border-radius: 10px;
         z-index: 9;
         overflow: hidden;
@@ -397,6 +398,7 @@ categories:
         }
       }
     }
+
     ```
   </details>
 

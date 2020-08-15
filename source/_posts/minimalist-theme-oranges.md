@@ -12,12 +12,12 @@ Hexo主题库看了不少，也用了不少，但一直没有找到符合自己�
 
 ### 截图
 #### 001-主页
-![001-主页](/images/minimalist-theme-oranges/theme-oranges-index.png)
+![001-主页](https://qiniu.zcheng.site/minimalist-theme-oranges-theme-oranges-index.png)
 
 ---
 
 #### 002-文章页
-![002-文章页](/images/minimalist-theme-oranges/theme-oranges-post.png)
+![002-文章页](https://qiniu.zcheng.site/minimalist-theme-oranges-theme-oranges-post.png)
 
 ### 优化与更新
 主题目前功能并不多，后续根据需求考虑更新迭代。

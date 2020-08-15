@@ -74,7 +74,7 @@ sudo vim default
 ```
 
 打开以后如下图显示。
-![](/images/hexo-deploy/nginx-default.png)
+![](https://qiniu.zcheng.site/hexo-deploy-nginx-default.png)
 修改红框标注的地方为你之前解压html.zip的目录，即`/var/www/blog/public`。
 保存退出，重载nginx。
 

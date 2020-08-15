@@ -83,7 +83,7 @@ ukSRZISmtzekcP4ra3KyXRa/npf4FztH2Peq+NiBlk5zCrgAd+sdXTcrtte1foVFrMa9vIZnrAGI ora
 ### github配置 ssh key
 
 复制以上出现的一大串内容，粘贴到自己github里面，这样以后，在当前电脑上提交/拉取代码的时候就不再需要输入密码。（其他没有生成ssh key的电脑上需要输入密码）。具体见下图：
-![](/images/sshkeys/ssh_key_github.png)
+![](https://qiniu.zcheng.site/sshkeys-ssh_key_github.png)
 
 ### gitlab配置 ssh key
 

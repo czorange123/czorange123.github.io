@@ -13,7 +13,8 @@ categories:
 我是在武汉封城的前一天回家的，也就是1月22日。当时武汉大街上已经人人皆口罩了，进车站前还做了简单的体温检测。一路上都没敢懈怠，不敢取下口罩，不敢喝一口水，也不敢跟陌生人讲一句话。
 
 大概2-3小时就到家了（家在湖北省境内）。在家，我也没敢取下口罩（除了睡觉取下来）。一边从网上了解最新疫情，一边给家人做着思想工作，给他们灌输“疫情有多可怕”的思想，希望身边的人都能重视起来，减少接触。当时我这个小乡镇也时有传出有人感染被隔离的消息，并且乡镇、村政府开始封路，每家每户都拉了隔离带，严禁出门。我家还被贴了告示。见下图：
-<img src="images/covid-19/1.png" alt="drawing" width="400"/>
+
+![](https://qiniu.zcheng.site/covid-19-1.png)
 
 ### 自我隔离
 当时终南山团队最新研究进展称病毒潜伏期一般情况下为1-14天。并且患者可能无症状，并能传染给其他人。于是我成了这个家的危险源。开始了自主隔离的生活。每天的活动地点是不超过15平米的房间。平时不戴口罩的父母，连睡觉都戴着口罩😂。
@@ -22,38 +23,52 @@ categories:
 挺过了隔离期，来到了第十五天。身体无恙，天气也转好。上天台晒太阳、玩手机、跟邻居隔楼聊天、还有逗狗。
 
 #### 🌞晒夕阳
-<img src="images/covid-19/2.png" alt="晒夕阳" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-2.png)
 
 #### 🐶给狗剪毛 （前与后），虽然剪的丑🙃
-<img src="images/covid-19/3.png" alt="像个拖把有没有" width="400" />
-<img src="images/covid-19/4.png" alt="剪的很丑有没有" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-3.png)
+
+![](https://qiniu.zcheng.site/covid-19-4.png)
 
 #### ⛄今天下雪了，堆雪人
-<img src="images/covid-19/5.png" alt="堆雪人" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-5.png)
 
 #### 🍪去厨房折腾
 ##### 油炸饼（前与后）
-<img src="images/covid-19/6.png" alt="油炸饼" width="400" />
-<img src="images/covid-19/7.png" alt="油炸饼" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-6.png)
+
+![](https://qiniu.zcheng.site/covid-19-7.png)
 
 ##### 水煎包（前与后）
-<img src="images/covid-19/8.png" alt="水煎包" width="400" />
-<img src="images/covid-19/9.png" alt="水煎包" width="400" />
+![](https://qiniu.zcheng.site/covid-19-8.png)
+
+![](https://qiniu.zcheng.site/covid-19-9.png)
 
 ##### 搓麻花
-<img src="images/covid-19/10.png" alt="搓麻花" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-10.png)
 
 ##### 炸土豆条
-<img src="images/covid-19/11.png" alt="炸土豆条" width="400" />
+
+![](https://qiniu.zcheng.site/covid-19-11.png)
 
 ##### 解封了，出门踏青
 已是春三月
-<img src="images/covid-19/12.png" alt="不知道什么花" width="400" />
-<img src="images/covid-19/13.png" alt="油菜花" width="400" />
-<img src="images/covid-19/14.png" alt="婆婆花" width="400" />
-<img src="images/covid-19/15.png" alt="好看的捧花" width="400" />
-<img src="images/covid-19/16.png" alt="蝴蝶？" width="400" />
-<img src="images/covid-19/17.png" alt="桃花" width="400" />
+![](https://qiniu.zcheng.site/covid-19-12.png)
+
+![](https://qiniu.zcheng.site/covid-19-13.png)
+
+![](https://qiniu.zcheng.site/covid-19-14.png)
+
+![](https://qiniu.zcheng.site/covid-19-15.png)
+
+![](https://qiniu.zcheng.site/covid-19-16.png)
+
+![](https://qiniu.zcheng.site/covid-19-17.png)
 
 ### 疫情前后的观念变化
 
