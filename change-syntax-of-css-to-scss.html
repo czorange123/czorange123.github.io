@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>SCSS语法学习与实践 - 将现有项目CSS整合成SCSS | Oranges</title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Oranges" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/"><img no-lazy src="/images/avatar.png" alt=""></a>
+    <div class="nickname"><a href="/">Oranges</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">朋友</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">SCSS语法学习与实践 - 将现有项目CSS整合成SCSS</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
+          2020-05-16
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签 | tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/SCSS/" title="查看 SCSS 标签">
+                    <b>#</b> SCSS
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p><a href="https://sass.bootcss.com/documentation/syntax" target="_blank" rel="noopener">Scss</a>是<a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a>的一种新语法。相较于传统的Css3，其引入了变量、函数、继承等一些新的概念，帮助我们更方便的书写Css。今天正好系统性学习下Scss，把博客Css代码整合成Scss，也算实践练手了。😋</p>
+<hr>
+<p>拿以下HTML代码举例</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"transition-demo demo-1-parent"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo-1-child"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>zcheng.site<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-3"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="嵌套规则"><a href="#嵌套规则" class="headerlink" title="嵌套规则"></a>嵌套规则</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="comment">// some css style</span></span><br><span class="line">  <span class="selector-class">.demo-1-child</span> &#123;</span><br><span class="line">    <span class="comment">// some css style</span></span><br><span class="line">    <span class="selector-tag">a</span> &#123;</span><br><span class="line">      <span class="comment">// some css style</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="引用嵌套中的父级选择器"><a href="#引用嵌套中的父级选择器" class="headerlink" title="引用嵌套中的父级选择器"></a>引用嵌套中的父级选择器</h2><p>在scss中进行嵌套时，可以使用<code>&amp;</code>表示父级选择器。以下scss代码中<code>&amp;.demo-1-parent</code>表示的是找到它的父级选择器<code>.transition-demo</code>，编译成css可以理解为<code>.transition-demo.demo-1-parent</code>。同理，下面的<code>&amp;:hover</code>表示找到父级<code>a</code>，编译成css为<code>a:hover</code>。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="comment">// some css style</span></span><br><span class="line">  &amp;<span class="selector-class">.demo-1-parent</span> &#123;</span><br><span class="line">    <span class="comment">// some css style</span></span><br><span class="line">    <span class="selector-class">.demo-1-child</span> &#123;</span><br><span class="line">      <span class="comment">// some css style</span></span><br><span class="line">      <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="comment">// some css style</span></span><br><span class="line">        &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">          <span class="comment">// some css style</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="嵌套属性规则"><a href="#嵌套属性规则" class="headerlink" title="嵌套属性规则"></a>嵌套属性规则</h2><p>在scss中可以将相同的css属性部分提取出来，如<code>font</code>、<code>border</code>属性。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="attribute">font</span> &#123;</span><br><span class="line">    family: fantasy;</span><br><span class="line">    size: <span class="number">1rem</span>;</span><br><span class="line">    <span class="selector-tag">style</span>: normal;</span><br><span class="line">    weight: bold;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid gray &#123;</span><br><span class="line">    radius: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>scss是以<code>{}</code>和<code>;</code>来识别属性和子属性，以<code>;</code>结尾识别为一个子属性，以<code>{</code>结尾即识别为一个嵌套着子属性的大属性。通过<code>-</code>来拼接属性与它所嵌套的子属性来达到效果。</p>
+<h2 id="声明与使用变量"><a href="#声明与使用变量" class="headerlink" title="声明与使用变量"></a>声明与使用变量</h2><p>scss使用<code>$</code>来声明一个变量</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$fontSize</span>: <span class="number">16px</span>; <span class="comment">// 声明一个变量</span></span><br><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$fontSize</span>; <span class="comment">// 使用变量</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="优先级问题"><a href="#优先级问题" class="headerlink" title="优先级问题"></a>优先级问题</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$fontSize</span>: <span class="number">16px</span>; <span class="comment">// 声明一个变量</span></span><br><span class="line"><span class="variable">$fontSize</span>: <span class="number">14px</span>; <span class="comment">// 重复声明变量</span></span><br><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$fontSize</span>; <span class="comment">// 使用变量</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译为css后</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>; <span class="comment">// 结果为14px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>声明相同变量，后面声明的会覆盖前面声明的。</p>
+<h3 id="作用域问题"><a href="#作用域问题" class="headerlink" title="作用域问题"></a>作用域问题</h3><p>scss可以在嵌套选择器内部声明变量，那么这个变量只能用于这个嵌套选择器内部。在声明选择器外部使用无效。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.transition-demo</span> &#123;</span><br><span class="line">  <span class="variable">$fontSize</span>: <span class="number">16px</span>; <span class="comment">// 在一个选择器内部声明一个变量</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$fontSize</span>; <span class="comment">// 使用变量，有效</span></span><br><span class="line">  <span class="selector-class">.demo-1-child</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="variable">$fontSize</span>; <span class="comment">// 使用变量，有效</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.filter-shadow</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$fontSize</span>; <span class="comment">// 使用变量，无效</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明与使用函数"><a href="#声明与使用函数" class="headerlink" title="声明与使用函数"></a>声明与使用函数</h2><p>scss使用<code>@mixin</code>来声明一个函数，使用<code>@include</code>来使用声明的函数。<br>如果css代码中有重复使用的代码片段，可以使用函数将它们封装起来复用。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个名为filterShadow的函数，定义一个叫$transform的参数，可根据情况来传递参数。</span></span><br><span class="line"><span class="keyword">@mixin</span> filterShadow(<span class="variable">$transform</span>) &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#262626</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="variable">$transform</span>;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.filter-shadow</span> &#123;</span><br><span class="line">  &amp;<span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">    &amp;<span class="selector-pseudo">::before</span>, &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="keyword">@include</span> filterShadow(scaleX(<span class="number">0</span>)) // 使用函数，传递参数</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;.demo-<span class="number">2</span> &#123;</span><br><span class="line">    &amp;<span class="selector-pseudo">::before</span>, &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="keyword">@include</span> filterShadow(scaleY(<span class="number">0</span>)) // 使用函数，传递参数</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="作用域问题-1"><a href="#作用域问题-1" class="headerlink" title="作用域问题"></a>作用域问题</h3><p>scss允许在嵌套的选择器中声明函数，此时函数作用域与声明变量同理。</p>
+<h2 id="定义与使用继承"><a href="#定义与使用继承" class="headerlink" title="定义与使用继承"></a>定义与使用继承</h2><p>scss使用<code>%</code>定义一个需要被继承的样式，通过<code>@extend</code>来使用继承。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个名为filterStyle的继承样式</span></span><br><span class="line">%filterStyle &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#262626</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="variable">$transform</span>;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.filter-shadow</span> &#123;</span><br><span class="line">  &amp;<span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">    <span class="keyword">@extend</span> %filterStyle; <span class="comment">// 继承样式</span></span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-class">.demo-2</span> &#123;</span><br><span class="line">    <span class="keyword">@extend</span> &amp;.demo-<span class="number">1</span>; <span class="comment">// 继承样式</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The End!</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/something-about-html.html" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>PREV</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
+              2020-05-16
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签 | tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/SCSS/" title="查看 SCSS 标签">
+                        <b>#</b> SCSS
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/css-animation-design.html" target="_self">
+                <span>NEXT</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌套规则"><span class="toc-text">嵌套规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用嵌套中的父级选择器"><span class="toc-text">引用嵌套中的父级选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌套属性规则"><span class="toc-text">嵌套属性规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#声明与使用变量"><span class="toc-text">声明与使用变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#优先级问题"><span class="toc-text">优先级问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域问题"><span class="toc-text">作用域问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#声明与使用函数"><span class="toc-text">声明与使用函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域问题-1"><span class="toc-text">作用域问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义与使用继承"><span class="toc-text">定义与使用继承</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <div id="vcomments"></div>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'j73OlR745tdiYMdFRzbTPDrO-gzGzoHsz',
+      appKey: 'mhyUfuvzMqhq02Fjxk41wc25',
+      placeholder: 'Welcome!',
+      avatar: 'retro'
+    })
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" href="https://github.com/zchengsite/" target="_blank" rel="noopener">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      <a href="https://github.com/zchengsite/hexo-theme-oranges" target="_blank" rel="noopener">Copyright © Oranges 2020</a>
+    </div>
+  
+    <div class="footer-more">
+      <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">鄂ICP备18028045号</a>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+    </div>
+  <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>

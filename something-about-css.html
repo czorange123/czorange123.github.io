@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>Something about CSS（持续更新⏳） | Oranges</title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Oranges" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/"><img no-lazy src="/images/avatar.png" alt=""></a>
+    <div class="nickname"><a href="/">Oranges</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">朋友</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Something about CSS（持续更新⏳）</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
+          2020-05-01
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签 | tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/CSS/" title="查看 CSS 标签">
+                    <b>#</b> CSS
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <link href="/scss/something-about-css.css" rel="stylesheet"></link>
+
+<blockquote>
+<p>一切来源于生活，看到或想到感兴趣的东西，仅仅用自己想要的形式表现出来。</p>
+</blockquote>
+<h2 id="CSS-filter"><a href="#CSS-filter" class="headerlink" title="CSS filter"></a>CSS filter</h2><h3 id="类box-shadow阴影效果"><a href="#类box-shadow阴影效果" class="headerlink" title="类box-shadow阴影效果"></a>类<code>box-shadow</code>阴影效果</h3><ul>
+<li><p>利用css滤镜模糊效果实现图片<strong>自身色彩</strong>阴影效果</p>
+<div class="filter-shadow demo-1"></div><div class="filter-shadow demo-2"></div><div class="filter-shadow demo-3"></div>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-shadow demo-3"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.filter-shadow</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">    <span class="attribute">background</span>: inherit;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">filter</span>: blur(<span class="number">10px</span>) brightness(<span class="number">80%</span>) opacity(.<span class="number">8</span>);</span><br><span class="line">    <span class="attribute">transform</span>: scale(.<span class="number">95</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-css-filter-test1.png"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-class">.demo-2</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-css-filter-test2.png"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-class">.demo-3</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-css-filter-test3.png"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+
+</li>
+</ul>
+<h3 id="类Windows10毛玻璃效果"><a href="#类Windows10毛玻璃效果" class="headerlink" title="类Windows10毛玻璃效果"></a>类Windows10毛玻璃效果</h3><ul>
+<li><p>利用<code>filter</code>结合<code>background-attachment:fixed</code>实现</p>
+<div class="acrylic-filer demo-1">
+  <div class="acrylic">Acrylic</div>
+</div>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"acrylic-filer demo-1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"acrylic"</span>&gt;</span>Acrylic<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> acrylic &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-acrylic.png"</span>) no-repeat center/contain;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.acrylic-filer</span><span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> acrylic;</span><br><span class="line">  <span class="selector-class">.acrylic</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">4em</span> <span class="number">6em</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">10px</span> <span class="number">30px</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>), <span class="number">0</span> <span class="number">1px</span> <span class="number">8px</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>);</span><br><span class="line">    &amp;<span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">      <span class="attribute">filter</span>: blur(<span class="number">10px</span>);</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">left</span>: -<span class="number">10px</span>;</span><br><span class="line">      <span class="attribute">top</span>: -<span class="number">10px</span>;</span><br><span class="line">      <span class="attribute">right</span>: -<span class="number">10px</span>;</span><br><span class="line">      <span class="attribute">bottom</span>: -<span class="number">10px</span>;</span><br><span class="line">      <span class="attribute">width</span>: calc(<span class="number">100%</span> + <span class="number">20px</span>);</span><br><span class="line">      <span class="attribute">height</span>: calc(<span class="number">100%</span> + <span class="number">20px</span>);</span><br><span class="line">      <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">      <span class="attribute">background</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-acrylic.png"</span>) no-repeat center/contain;</span><br><span class="line">      <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">background</span>: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.7</span>);</span><br><span class="line">      <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+</li>
+<li><p>使用<code>backdrop-filter</code>实现(使用起来简单，但目前兼容性较差，<a href="https://www.caniuse.com/#search=backdrop-filter" target="_blank" rel="noopener">查看</a>兼容性)</p>
+<div class="acrylic-backdrop-filter demo-2">
+  <div class="acrylic">Acrylic</div>
+</div>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"acrylic-backdrop-filter demo-2"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"acrylic"</span>&gt;</span>Acrylic<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.acrylic-backdrop-filter</span><span class="selector-class">.demo-2</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> acrylic;</span><br><span class="line">  <span class="selector-class">.acrylic</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">4em</span> <span class="number">6em</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">10px</span> <span class="number">30px</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>), <span class="number">0</span> <span class="number">1px</span> <span class="number">8px</span> rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>);</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.7</span>);</span><br><span class="line">    -webkit-backdrop-<span class="attribute">filter</span>: blur(<span class="number">10px</span>);</span><br><span class="line">    backdrop-<span class="attribute">filter</span>: blur(<span class="number">10px</span>);</span><br><span class="line">    <span class="attribute">background-blend-mode</span>: exclusion;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+
+</li>
+</ul>
+<h2 id="CSS-position"><a href="#CSS-position" class="headerlink" title="CSS position"></a>CSS position</h2><h3 id="类pinterest瀑布流布局"><a href="#类pinterest瀑布流布局" class="headerlink" title="类pinterest瀑布流布局"></a>类<a href="https://www.pinterest.com/" target="_blank" rel="noopener">pinterest</a>瀑布流布局</h3><h2 id="CSS-border"><a href="#CSS-border" class="headerlink" title="CSS border"></a>CSS border</h2><h3 id="小书签"><a href="#小书签" class="headerlink" title="小书签"></a>小书签</h3><ul>
+<li><p>使用<code>border</code>结合<code>::before</code>&amp; <code>::after</code>实现书签效果</p>
+<div class="border-demo demo-1">书签</div><br>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"border-demo demo-1"</span>&gt;</span>书签<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.border-demo</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">background</span>: gray;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="comment">/*垂直小书签*/</span></span><br><span class="line">  &amp;<span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">4.2rem</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">2.8rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.5rem</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">2rem</span>;</span><br><span class="line">    &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">top</span>: <span class="number">100%</span>;</span><br><span class="line">      <span class="attribute">border</span>: <span class="number">1.4rem</span> solid gray;</span><br><span class="line">      <span class="attribute">border-top-width</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border-bottom-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-bottom-left-radius</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details><br>
+
+<div class="border-demo demo-2">书签</div><br>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"border-demo demo-2"</span>&gt;</span>书签<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.border-demo</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">background</span>: gray;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="comment">/*水平小书签*/</span></span><br><span class="line">  &amp;<span class="selector-class">.demo-2</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">2.8rem</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">4.2rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.5rem</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">2.8rem</span>;</span><br><span class="line">    &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">100%</span>;</span><br><span class="line">      <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border</span>: <span class="number">1.4rem</span> solid gray;</span><br><span class="line">      <span class="attribute">border-left-width</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border-right-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details><br>
+
+<div class="border-demo demo-3">我是一个小书签</div><br>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"border-demo demo-3"</span>&gt;</span>我是一个小书签<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.border-demo</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">background</span>: gray;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="comment">/*水平带小折角书签*/</span></span><br><span class="line">  &amp;<span class="selector-class">.demo-3</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">2.8rem</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">12rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.5rem</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">2.8rem</span>;</span><br><span class="line">    &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">100%</span>;</span><br><span class="line">      <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border</span>: <span class="number">1.4rem</span> solid gray;</span><br><span class="line">      <span class="attribute">border-left-width</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border-right-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;<span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">top</span>: -<span class="number">1.6rem</span>;</span><br><span class="line">      <span class="attribute">border</span>: <span class="number">0.8rem</span> solid <span class="number">#555555</span>;</span><br><span class="line">      <span class="attribute">border-top-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-left-color</span>: transparent;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details><br>
+
+</li>
+</ul>
+<h3 id="奇形怪状"><a href="#奇形怪状" class="headerlink" title="奇形怪状"></a>奇形怪状</h3><ul>
+<li><p>使用<code>border</code>结合<code>::before</code>&amp; <code>::after</code>实现平行四边形效果</p>
+<div class="border-demo demo-4"></div><br>
+
+<details>
+  <summary>显示代码</summary>
+  <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"border-demo demo-4"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.border-demo</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">background</span>: gray;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  &amp;<span class="selector-class">.demo-4</span> &#123;</span><br><span class="line">    <span class="keyword">@mixin</span> border-demo-<span class="number">4</span> &#123;</span><br><span class="line">      <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">border</span>: <span class="number">1rem</span> solid gray;</span><br><span class="line">      <span class="attribute">border-bottom-left-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">0rem</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0rem</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">    &amp;<span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">      <span class="keyword">@include</span> border-demo-<span class="number">4</span>;</span><br><span class="line">      <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border-top-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-left-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-bottom-left-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">      <span class="keyword">@include</span> border-demo-<span class="number">4</span>;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">border-bottom-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-right-color</span>: transparent;</span><br><span class="line">      <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+
+</li>
+</ul>
+<h3 id="阳光阴影效果-test"><a href="#阳光阴影效果-test" class="headerlink" title="阳光阴影效果 (test)"></a>阳光阴影效果 (test)</h3>  <div class="shadow-demo demo-1">
+    <div class="card-1">
+      <div class="card-title">Oranges</div>
+      <div class="card-footer">zcheng.site</div>
+    </div>
+    <div class="shadow-demo-item ellipse-900"></div>
+  </div>
+
+  <details>
+    <summary>显示代码</summary>
+    <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"shadow-demo demo-1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Oranges<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-footer"</span>&gt;</span>zcheng.site<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"shadow-demo-item ellipse-900"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<pre><code><figure class="highlight scss"><figcaption><span>SCSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.shadow-demo</span> &#123;</span><br><span class="line">  &amp;<span class="selector-class">.demo-1</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50rem</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="string">"https://qiniu.zcheng.site/something-about-css-panel-bg.png"</span>);</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">9</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="selector-class">.card-1</span> &#123;</span><br><span class="line">      <span class="attribute">position</span>: absolute;</span><br><span class="line">      <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">      <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">      <span class="attribute">transform</span>: translate(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">      <span class="attribute">width</span>: <span class="number">40%</span>;</span><br><span class="line">      <span class="attribute">height</span>: <span class="number">40rem</span>;</span><br><span class="line">      <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">      <span class="attribute">box-shadow</span>: <span class="number">2px</span> <span class="number">2px</span> <span class="number">5px</span> <span class="number">0px</span> <span class="number">#1f1f1f</span>;</span><br><span class="line">      <span class="selector-class">.card-title</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">top</span>: <span class="number">30%</span>;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">transform</span>: translate(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">36px</span>;</span><br><span class="line">        <span class="attribute">font-weight</span>: bold;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-class">.card-footer</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">bottom</span>: <span class="number">10%</span>;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">transform</span>: translate(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">        <span class="attribute">font-weight</span>: bold;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.shadow-demo-item</span> &#123;</span><br><span class="line">      &amp;<span class="selector-class">.ellipse-900</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">z-index</span>: <span class="number">10</span>;</span><br><span class="line">        <span class="attribute">transform</span>: rotate(-<span class="number">66deg</span>);</span><br><span class="line">        <span class="attribute">transform-origin</span>: center;</span><br><span class="line">        <span class="attribute">filter</span>: blur(<span class="number">15px</span>);</span><br><span class="line">        <span class="attribute">background</span>: linear-gradient(transparent <span class="number">60%</span>, rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.6</span>) <span class="number">15%</span>);</span><br><span class="line">        <span class="attribute">background-size</span>: <span class="number">100%</span> <span class="number">18%</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></code></pre>  </details>
+
+<h2 class="to-be-continued headerlink" id="To be continued">To be continued<dot></dot></h2>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/minimalist-theme-oranges.html" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>PREV</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
+              2020-05-01
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签 | tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/CSS/" title="查看 CSS 标签">
+                        <b>#</b> CSS
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/something-about-html.html" target="_self">
+                <span>NEXT</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-filter"><span class="toc-text">CSS filter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类box-shadow阴影效果"><span class="toc-text">类box-shadow阴影效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类Windows10毛玻璃效果"><span class="toc-text">类Windows10毛玻璃效果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-position"><span class="toc-text">CSS position</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类pinterest瀑布流布局"><span class="toc-text">类pinterest瀑布流布局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-border"><span class="toc-text">CSS border</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#小书签"><span class="toc-text">小书签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#奇形怪状"><span class="toc-text">奇形怪状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阳光阴影效果-test"><span class="toc-text">阳光阴影效果 (test)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#To be continued"><span class="toc-text">To be continued</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <div id="vcomments"></div>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'j73OlR745tdiYMdFRzbTPDrO-gzGzoHsz',
+      appKey: 'mhyUfuvzMqhq02Fjxk41wc25',
+      placeholder: 'Welcome!',
+      avatar: 'retro'
+    })
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" href="https://github.com/zchengsite/" target="_blank" rel="noopener">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      <a href="https://github.com/zchengsite/hexo-theme-oranges" target="_blank" rel="noopener">Copyright © Oranges 2020</a>
+    </div>
+  
+    <div class="footer-more">
+      <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">鄂ICP备18028045号</a>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+    </div>
+  <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>
