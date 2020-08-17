@@ -78,7 +78,7 @@ theme: oranges
 deploy:
   type: git
   message: update pages
-  repo: root@47.99.216.45:/var/www/blog.git
+  repo: root@158.247.195.121:/var/www/blog.git
   branch: master
 
   # 部署github pages
