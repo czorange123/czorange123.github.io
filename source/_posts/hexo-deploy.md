@@ -11,7 +11,7 @@ categories:
 本篇主要记录下如何将hexo博客部署到非`github pages`的第三方云服务器上，并实现一键部署。
 
 > 以下本地操作均在Ubuntu 18.04.1 LTS中进行测试。
-> 以下云服务器上操作在阿里云Ubuntu 16.04.4 LTS \n \l中进行测试。
+> 以下云服务器操作在阿里云Ubuntu 16.04.4 LTS \n \l中进行测试。
 
 ### 准备工作
 - [x] 一台云服务器（阿里云、腾讯云等）
@@ -100,8 +100,11 @@ sudo nginx -s reload
 **1、在服务器上创建仓库**
 
 ```bash
-mkdir blog.git
-cd blog.git
+# 下面的repository为GitHub存储库名，请务必修改为自己GitHub项目存储库名。
+# 新建repository.git文件夹
+mkdir repository.git
+cd repository.git
+# 在repository.git下生成git裸库。
 git init --bare
 ```
 
@@ -125,12 +128,14 @@ sudo vim post-receive
 输入以下内容，并保存退出
 
 ```bash
-GIT_REPO=/var/www/blog.git
-TMP_GIT_CLONE=/var/www/tmp/blog
-PUBLIC_WWW=/var/www/blog
+# 下面出现的所有/var/www/为我个人目录设置，可根据自己需求进行修改。
+# 下面出现的所有repository为GitHub存储库名，请务必修改为自己GitHub项目存储库名。
+GIT_REPO=/var/www/repository.git
+TMP_GIT_CLONE=/var/www/tmp/repository
+PUBLIC_WWW=/var/www/repository
 rm -rf ${TMP_GIT_CLONE}
 git clone $GIT_REPO $TMP_GIT_CLONE
-rm -rf ${PUBLIC_WWW}/*
+rm -rf ${PUBLIC_WWW}
 cp -rf ${TMP_GIT_CLONE}/ ${PUBLIC_WWW}
 ```
 
@@ -138,20 +143,24 @@ cp -rf ${TMP_GIT_CLONE}/ ${PUBLIC_WWW}
 - `GIT_REPO`： 服务器git仓库所在目录，此目录并不放博客项目。
 - `TMP_GIT_CLONE`： 临时目录，git会将提交的文件先存到临时目录。
 - `PUBLIC_WWW`： 服务器上放博客项目的目录，你想将博客放在哪，修改此项即可。 注意此目录应对于`nginx root`设置的目录。
-- 下面四行为bash命令，设置好就会自动执行。
+- 下面四行为bash命令，设置好会按顺序自动执行。
+    + `rm -rf ${TMP_GIT_CLONE}` 意思为移除第二行定义的临时目录`TMP_GIT_CLONE`。
+    + `git clone $GIT_REPO $TMP_GIT_CLONE` 意思为重新克隆最新的项目到临时目录`TMP_GIT_CLONE`中。
+    + `rm -rf ${PUBLIC_WWW}` 意思为移除当前正在线上运行的项目。
+    + `cp -rf ${TMP_GIT_CLONE}/ ${PUBLIC_WWW}` 意思为重新从临时目录中拷贝新的项目到`PUBLIC_WWW`中。
 
-注意：
-> 上述文件出现的`/var/www`为根目录，这里是我个人配置。供参考，具体自行修改路径。
-
-**3、修改目录权限**
+**3、修改文件权限**
 
 ```bash
 chmod +x post-receive
-chmod 777 -R /var/www/blog
 ```
-chmod +x filename 命令将文件变为可执行，chmod 777 -R 命令赋予文件或文件夹可读写权限。
 
-**4、修改本地博客配置**
+chmod +x filename 命令将文件变为可执行。
+
+**4、nginx配置**
+参考上述<a href="#传统部署方式">传统部署方式</a>的nginx配置。
+
+**5、修改本地博客配置**
 
 打开项目文件，找到`_config.yml`打开，找到`deploy`配置进行修改。
 
@@ -159,7 +168,7 @@ chmod +x filename 命令将文件变为可执行，chmod 777 -R 命令赋予文�
 deploy:
   type: git
   message: update
-  repo: username@xx.xx.xxx.xx:/var/www/blog.git
+  repo: username@xx.xx.xxx.xx:/var/www/repository.git
   branch: master
 ```
 
@@ -169,7 +178,7 @@ deploy:
 
 提示输入密码，这里输入服务器登录密码即可。出现以下信息部署完成：
 ```
-Branch 'master' set up to track remote branch 'master' from 'xx@xx.xx.xxx:/var/www/blog.git'.
+Branch 'master' set up to track remote branch 'master' from 'xx@xx.xx.xxx:/var/www/repository.git'.
 INFO  Deploy done: git
 ```
 
