@@ -4,10 +4,10 @@
 
 # Site
 title: Oranges
-subtitle: be yourself
-description: Welcome
-author: oranges
-language: 
+subtitle: 
+description: 
+author: Zcheng
+language: zh-CN
 timezone: 
 
 # URL
@@ -124,3 +124,8 @@ lazyload:
   onlypost: false # optional
   loadingImg: https://qiniu.zcheng.site/image-loading.svg
   isSPA: false # optional
+
+search:
+  path: search.xml
+  field: post
+  content: true

@@ -7,6 +7,11 @@ html, body {
   font-size: 10px;
 }
 
+body.hidden {
+  overflow: hidden;
+  padding-right: 6px;
+}
+
 #app {
   position: relative;
   margin: 0 auto;
@@ -48,6 +53,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   margin-left: calc(100vw - 100%);
+  transition: all 0.3s ease;
 }
 
 .header {
@@ -126,6 +132,13 @@ a:hover {
   word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.post-item .title .post-top {
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding-right: 8px;
+  color: #535353;
 }
 
 .tag-details .time-m-d, .archives .time-m-d, .category-details .time-m-d {
@@ -459,10 +472,119 @@ a:hover {
 .back-to-top {
   position: fixed;
   right: 2.2rem;
-  bottom: 3.2rem;
+  bottom: 5.2rem;
   font-weight: bold;
 }
 
 .back-to-top.hidden {
   display: none;
+}
+
+.search-icon {
+  position: fixed;
+  right: 2.2rem;
+  bottom: 2.2rem;
+  font-weight: bold;
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease;
+  visibility: visible;
+  padding-right: 6px;
+}
+
+.search-overlay.hidden {
+  background-color: transparent;
+  visibility: hidden;
+  transition: visibility 0s linear 0.2s, background-color 0.2s;
+  padding-right: 0;
+}
+
+.search-overlay.hidden .search-content {
+  position: relative;
+  top: 15%;
+  opacity: 0;
+}
+
+.search-content {
+  position: relative;
+  top: 18%;
+  opacity: 1;
+  background-color: transparent;
+  z-index: 999;
+  border-radius: 10px;
+  margin: 0 2rem;
+  transition: top 0.2s ease, opacity 0.2s ease;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .search-content {
+    width: 520px;
+    margin: 0 auto;
+  }
+}
+
+.search-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.search-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 1.6rem;
+  height: 38px;
+  line-height: 38px;
+}
+
+.search-result {
+  max-height: 350px;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.search-result ul {
+  padding: 10px;
+}
+
+.search-result-list li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.search-result-list li:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.search-result-abstract {
+  padding: 10px 10px 0 10px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.search-keyword {
+  color: #e96900;
+}
+
+.local-search-empty {
+  font-size: 1.6rem;
 }
