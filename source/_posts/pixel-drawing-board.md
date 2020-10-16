@@ -243,8 +243,8 @@ canvas.addEventListener('mouseup', function(e) {
 - [x] 画笔颜色
 - [ ] 画笔粗细
 - [ ] 快捷工具
-- [ ] 预览功能
-- [ ] 导出图片
+- [x] 预览功能 [2020.10.16]
+- [x] 导出图片 [2020.10.16]
 - [ ] 导出CSS box-shadow
 
 ### 未解决的问题 & bugs
