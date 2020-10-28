@@ -35,7 +35,9 @@ Github: https://github.com/zchengsite
 ---
 
 - 熟悉JavaScript、HTML5、CSS3
-- 熟悉Vue.js框架
+- 熟悉Vue.js框架，了解React框架
+- 熟悉微信小程序开发，了解相关UI框架
+- 熟悉ES6语法
 - 了解Python
 
 ### 工作经历
